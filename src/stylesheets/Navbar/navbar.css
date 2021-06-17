@@ -1,0 +1,67 @@
+@keyframes expand {
+  from {
+    opacity: 0%;
+    height: 0%;
+  }
+  to {
+    opacity: 100%;
+    height: 50%;
+  }
+}
+@keyframes ghost-out {
+  from {
+    opacity: 100%;
+    height: 50%;
+  }
+  to {
+    opacity: 0%;
+    height: 0%;
+  }
+}
+.nav-bar {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  width: 5vh;
+  height: 100vh;
+}
+.nav-bar .nav-menu {
+  display: block;
+  opacity: 100%;
+  padding: 2vh 0vh 0vh 2vh;
+  cursor: pointer;
+}
+.nav-bar .nav-items {
+  animation: ghost-out;
+  animation-duration: 0.2s;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  opacity: 0%;
+  height: 0%;
+  padding: 2vh 0vh 0vh 2vh;
+  cursor: pointer;
+}
+.nav-bar .nav-items :hover {
+  opacity: 50%;
+}
+
+.nav-bar:hover > .nav-menu {
+  animation: ghost-out;
+  animation-duration: 0.3s;
+  display: none;
+  opacity: 0%;
+}
+
+.nav-bar:hover > .nav-items {
+  animation: expand;
+  animation-duration: 0.3s;
+  display: flex;
+  opacity: 100%;
+  flex-direction: column;
+  justify-content: space-between;
+  align-content: center;
+  height: 50%;
+}
+
+/*# sourceMappingURL=navbar.css.map */
