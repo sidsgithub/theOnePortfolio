@@ -12,7 +12,7 @@
     display: flex;
     flex-flow: column;
     justify-content: center;
-    width: 5vh;
+    width: max-content;
     height: 100vh;
 
     .nav-menu{
@@ -20,6 +20,7 @@
         opacity: 100%;
         padding: 2vh 0vh 0vh 2vh;
         cursor: pointer;
+        color: white;
     }
 
     .nav-items{
@@ -32,6 +33,7 @@
         height: 0%;
         padding: 2vh 0vh 0vh 2vh;
         cursor: pointer;
+        color: white;
         :hover{
             opacity: 50%;
         }
