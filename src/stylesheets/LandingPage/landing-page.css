@@ -20,23 +20,41 @@
 .landing-div .margin-top-3 {
   margin-top: 0.3vh;
 }
+.landing-div .margin-top-b3 {
+  margin-top: 3vh;
+}
 .landing-div .content {
   font-size: 5vh;
+  margin-left: 1.5vh;
+}
+.landing-div .margin-left {
+  margin-left: 1.5vh;
+}
+.landing-div .color-red {
+  color: rgba(212, 51, 51, 0.808);
+}
+.landing-div .color-yellow {
+  color: #d2d382;
 }
 .landing-div .outer-frame {
-  height: 50vh;
+  height: 55vh;
   width: 35vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #3e3e41;
+  background-color: #d2d382;
   border-radius: 2%;
 }
 .landing-div .outer-frame .inner-frame {
-  height: 45vh;
+  height: 50vh;
   width: 30vh;
   border-radius: 2%;
-  background-color: #1c1d25;
+  background-color: #181b1b;
+}
+.landing-div .outer-frame .inner-frame .profile-image {
+  height: 55vh;
+  width: 30vh;
+  border-radius: 2%;
 }
 
 /*# sourceMappingURL=landing-page.css.map */

@@ -2,11 +2,11 @@
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
-    background-color:#1c1d25;
+    background-color:#181b1b;
 }
 .app-no-nav{
     display: flex;
-    background-color:#1c1d25;
+    background-color:#181b1b;
     flex-direction: column;
     flex-wrap: wrap;
     height: 100vh;
