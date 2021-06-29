@@ -9,21 +9,26 @@
 }
 
 .nav-bar{
+    height: 100vh;
     display: flex;
     flex-flow: column;
     justify-content: center;
     width: max-content;
-    height: 100vh;
-
+    color: white;
+    position: sticky; // to make the nav stick 
+    top: 0; // to maintain the position of the sticky nav
+    .active{
+        color:#d2d382;
+    }
     .nav-menu{
         display: block;
         opacity: 100%;
         padding: 2vh 0vh 0vh 2vh;
         cursor: pointer;
-        color: white;
     }
 
     .nav-items{
+        text-decoration: none;
         animation: ghost-out;
         animation-duration: .2s;
         display: flex;
@@ -33,9 +38,13 @@
         height: 0%;
         padding: 2vh 0vh 0vh 2vh;
         cursor: pointer;
-        color: white;
+        .items{
+            text-decoration: none;
+            color: white;
+        }
         :hover{
             opacity: 50%;
+            color:#d2d382;
         }
     }
 }

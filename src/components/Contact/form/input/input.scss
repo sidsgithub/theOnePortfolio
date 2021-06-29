@@ -1,0 +1,16 @@
+.form-row {
+    display: flex;
+    flex-direction: column;
+    .input-field-row {
+      padding: 1.5vh;
+      color: black;
+      background-color: #d2d382;
+      border: #d2d382;
+      border-radius: 0.7vh;
+      outline: whitesmoke;
+    }
+    .error {
+      color: red;
+      font-size: 0.7em;
+    }
+  }
