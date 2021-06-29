@@ -1,0 +1,20 @@
+.contact-container {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  height: 100vh;
+}
+.contact-container .contact {
+  color: white;
+  width: 50vh;
+}
+.contact-container .maps {
+  margin: 10vh 0vh 0vh 0vh;
+  width: 75vh;
+  height: 80%;
+  overflow: unset;
+  position: relative;
+}
+
+/*# sourceMappingURL=contact.css.map */

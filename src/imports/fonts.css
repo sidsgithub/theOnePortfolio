@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@1,500&display=swap');
 
 .dancing-script-font{
     font-family: 'Dancing Script', cursive;
@@ -7,14 +8,10 @@
 .caveat-font{
     font-family: 'Caveat', cursive;
 }
-
-.em-3{
-    font-size: 3em;
-}
-.em-2{
-    font-size: 2em;
-
-}
-.em-1{
-    font-size: 1em;
+ .cormorant-garamond{
+    font-family: 'Cormorant Garamond', serif;
+ }
+ .html-background-tags{
+    color: rgba(181, 144, 216, 0.61);
+    opacity: 50%;
 }

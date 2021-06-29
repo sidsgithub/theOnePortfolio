@@ -1,0 +1,18 @@
+.form-row {
+  display: flex;
+  flex-direction: column;
+}
+.form-row .input-field-row {
+  padding: 1.5vh;
+  color: black;
+  background-color: #d2d382;
+  border: #d2d382;
+  border-radius: 0.7vh;
+  outline: whitesmoke;
+}
+.form-row .error {
+  color: red;
+  font-size: 0.7em;
+}
+
+/*# sourceMappingURL=input.css.map */
