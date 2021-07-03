@@ -2,11 +2,9 @@
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
-    background-color:#181b1b;
 }
 .app-no-nav{
     display: flex;
-    background-color:#181b1b;
     flex-direction: column;
     flex-wrap: nowrap;
     width: -webkit-fill-available;
@@ -26,4 +24,7 @@ select:-webkit-autofill:focus {
   caret-color: white;
   box-shadow: 0 0 0px 1000px #323333 inset;
   -webkit-box-shadow: 0 0 0px 1000px #323333 inset;
+}
+.body{
+  margin: 0px;
 }

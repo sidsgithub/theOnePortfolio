@@ -5,15 +5,19 @@ import LandingPage from "./components/LandingPage/landingPage";
 import About from "./components/About/about";
 import Contact from "./components/Contact/contact";
 import ThemeContext from "./context/theme-context";
+import { Helmet } from "react-helmet";
 
 function App() {
   const [theme, setTheme] = useState("light");
   const value = { theme, setTheme };
   return (
     <ThemeContext.Provider value={value}>
-      <div className="App">
+      <Helmet>
+        <body className={`body ${theme === "dark" ? "dark" : "light"} `}></body>
+      </Helmet>
+      <div className={`App ${theme === "dark" ? "dark" : "light"}`}>
         <Navbar />
-        <div className="app-no-nav">
+        <div className={`app-no-nav ${theme === "dark" ? "dark" : "light"}`}>
           <LandingPage />
           <About />
           <Contact />

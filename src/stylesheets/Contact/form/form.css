@@ -29,16 +29,22 @@
 }
 .form-container .form .form-row .input-field-row {
   padding: 1.5vh;
-  color: white;
-  background-color: #323333;
-  border: white;
   border-radius: 0.7vh;
-  outline: whitesmoke;
   margin: 2vh 0vh 0vh 0vh;
 }
 .form-container .form .form-row .error {
   color: #eb5c5c;
   font-size: 2vh;
+}
+.grey {
+  background-color: #323333;
+  outline: #323333;
+  border: black;
+}
+
+.strong-blue {
+  background-color: #d9eef3;
+  border: #d9eef3;
 }
 
 /*# sourceMappingURL=form.css.map */

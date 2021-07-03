@@ -1,0 +1,12 @@
+.dark{
+    color: rgb(23, 83, 122);
+    background-color: rgb(208, 216, 204);
+    border: black;
+    /* outline: black; */
+  }
+  .light{
+    color:white;
+    border: white;
+    background-color: #181b1b;
+    /* outline: whitesmoke; */
+  }

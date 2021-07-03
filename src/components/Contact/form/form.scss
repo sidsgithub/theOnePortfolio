@@ -26,11 +26,7 @@
       margin: 0vh 0vh 2vh 0vh;
       .input-field-row {
         padding: 1.5vh;
-        color: white;
-        background-color: #323333;
-        border: white;
         border-radius: 0.7vh;
-        outline: whitesmoke;
         margin: 2vh 0vh 0vh 0vh;
       }
       .error {
@@ -46,4 +42,14 @@
     .disabled-btn {
     }
   }
+}
+
+.grey{
+  background-color: #323333;
+  outline: #323333;
+  border: black;
+}
+.strong-blue{
+  background-color: rgb(217, 238, 243);
+  border: rgb(217, 238, 243);
 }
