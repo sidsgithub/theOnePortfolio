@@ -54,8 +54,8 @@ const ContactForm = ({
               className="form"
             >
               {/* Name */}
-              <div className="form-row cormorant-garamond top-margin">
-                <label htmlFor="name">Name</label>
+              <div className="form-row cormorant-garamond">
+               
                 <input
                   type="name"
                   name="name"
@@ -63,6 +63,7 @@ const ContactForm = ({
                   value={values.name}
                   onChange={handleChange}
                   onBlur={handleBlur}
+                  placeholder='name'
                   className={`input-field-row ${theme === 'dark' ? 'strong-blue' : 'grey'}`}
                 />
                 {errors.name && touched.name && (
@@ -70,8 +71,7 @@ const ContactForm = ({
                 )}
               </div>
               {/* Email */}
-              <div className="form-row cormorant-garamond top-margin">
-                <label htmlFor="email">Email</label>
+              <div className="form-row cormorant-garamond">
                 <input
                   type="email"
                   name="email"
@@ -79,6 +79,7 @@ const ContactForm = ({
                   value={values.email}
                   onChange={handleChange}
                   onBlur={handleBlur}
+                  placeholder='email'
                   className={`input-field-row ${theme === 'dark' ? 'strong-blue' : 'grey'}`}
                 />
                 {errors.email && touched.email && (
@@ -86,8 +87,8 @@ const ContactForm = ({
                 )}
                 </div>
               {/* Message */}
-              <div className="form-row cormorant-garamond top-margin">
-                <label htmlFor="message">Message</label>
+              <div className="form-row cormorant-garamond">
+                
                 <textarea
                   style={{ resize: "none" }}
                   rows="4"
@@ -98,6 +99,7 @@ const ContactForm = ({
                   value={values.message}
                   onChange={handleChange}
                   onBlur={handleBlur}
+                  placeholder='message'
                   className={`input-field-row ${theme === 'dark' ? 'strong-blue' : 'grey'}`}
                 />
                 {errors.message && touched.message && (
@@ -119,7 +121,7 @@ const ContactForm = ({
               <div className="loader-section">
                 <Loader
                   type="Rings"
-                  color="#d2d382"
+                  color="#fbff09"
                   height={100}
                   width={100}
                   timeout={10000}

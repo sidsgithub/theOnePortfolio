@@ -8,14 +8,14 @@
 .about-container .heading {
   font-size: 5vh;
   margin-left: 1.5vh;
-  color: #d2d382;
+  color: #fbff09;
 }
 .about-container .about-content {
   font-size: 2.5vh;
   margin-left: 1.5vh;
 }
 .about-container .blue {
-  color: #9eb9e0;
+  color: #418a8a;
 }
 .about-container .about {
   display: flex;

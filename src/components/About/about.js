@@ -18,12 +18,12 @@ const About = () => {
         <div className={`caveat-font html-${style}-background-tags`}>{`<p>`}</div>
         <div className={`about-content cormorant-garamond`}>
           <p >
-            I am sure by now you have pretty descent idea of some of my likes
-            and interests. Allow me to add some more here.
+            I am sure by now you a have pretty descent idea of some of my likes
+            and interests. Allow me to add some more.
           </p>
           <p>
-            I am code fanatic based in India who does think of himself as an
-            artist and a sudo-perfectionist. This sudo-perfectionist is involved
+            I am a code fanatic based in India who does think of himself as an
+            artist and a pseudo-perfectionist. This pseudo-perfectionist is involved
             in a lot of artsy stuff. Travelling is fuel for me.
           </p>
           <p>
