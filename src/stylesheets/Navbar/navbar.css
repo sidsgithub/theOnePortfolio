@@ -28,12 +28,12 @@
   top: 0;
 }
 .nav-component .theme-switch {
-  display: flex;
-  flex-flow: column;
-  justify-content: center;
-  width: max-content;
-  position: sticky;
-  top: 0;
+  cursor: pointer;
+}
+.nav-component .theme-switch :hover {
+  cursor: pointer;
+  opacity: 50%;
+  color: #2894a7;
 }
 .nav-component .nav-bar {
   height: 100vh;
@@ -45,7 +45,7 @@
   top: 0;
 }
 .nav-component .nav-bar .active {
-  color: #d2d382;
+  color: #2894a7;
 }
 .nav-component .nav-bar .nav-menu {
   display: block;
@@ -70,7 +70,7 @@
 }
 .nav-component .nav-bar .nav-items :hover {
   opacity: 50%;
-  color: #d2d382;
+  color: #2894a7;
 }
 
 .nav-bar:hover > .nav-menu {

@@ -28,13 +28,14 @@
     position: sticky; // to make the nav stick
     top: 0;
 
+  
   .theme-switch{
-    display: flex;
-    flex-flow: column;
-    justify-content: center;
-    width: max-content;
-    position: sticky; // to make the nav stick
-    top: 0; // to maintain the position of the sticky nav
+    cursor: pointer;
+      :hover {
+        cursor: pointer;
+        opacity: 50%;
+        color: rgb(40, 148, 167);
+      }
   }
   .nav-bar {
     height: 100vh;
@@ -45,7 +46,7 @@
     position: sticky; // to make the nav stick
     top: 0; // to maintain the position of the sticky nav
     .active {
-      color: #d2d382;
+      color: rgb(40, 148, 167);
     }
     .nav-menu {
       display: block;
@@ -70,7 +71,7 @@
       }
       :hover {
         opacity: 50%;
-        color: #d2d382;
+        color: rgb(40, 148, 167);
       }
     }
   
