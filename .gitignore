@@ -22,6 +22,10 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
  
-src/assets
-.firebaserc
 .firebase
+/build
+/public
+.env
+.firebaserc
+firebase.json
+package-lock.json
