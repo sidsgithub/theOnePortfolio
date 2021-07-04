@@ -30,7 +30,10 @@
   color: rgba(212, 51, 51, 0.808);
 }
 .landing-div .color-yellow {
-  color: #d2d382;
+  color: #fbff09;
+}
+.landing-div .color-cyan {
+  color: #418a8a;
 }
 .landing-div .outer-frame {
   height: 55vh;
@@ -38,8 +41,11 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #d2d382;
+  background-color: #dadb75;
   border-radius: 2%;
+  border: 0.2rem solid #fff;
+  padding: 0.4em;
+  box-shadow: 0 0 0.2rem #fff, 0 0 0.2rem #fff, 0 0 2rem #fefa13, 0 0 0.8rem #eefe13, 0 0 2.8rem #eefe13, inset 0 0 1.3rem #eefe13;
 }
 .landing-div .outer-frame .inner-frame {
   height: 50vh;

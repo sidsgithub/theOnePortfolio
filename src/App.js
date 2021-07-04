@@ -1,19 +1,33 @@
+import React, { useState } from "react";
 import "./App.css";
 import Navbar from "./components/Navbar/navbar";
 import LandingPage from "./components/LandingPage/landingPage";
 import About from "./components/About/about";
 import Contact from "./components/Contact/contact";
+import ThemeContext from "./context/theme-context";
+import { Helmet } from "react-helmet";
+import {
+
+  isBrowser
+} from "react-device-detect";
 
 function App() {
+  const [theme, setTheme] = useState("light");
+  const value = { theme, setTheme };
   return (
-    <div className="App">
-      <Navbar />
-      <div className="app-no-nav">
-        <LandingPage />
-        <About />
-        <Contact/> 
+    <ThemeContext.Provider value={value}>
+      <Helmet>
+        <body className={`body ${theme === "dark" ? "dark" : "light"} `}></body>
+      </Helmet>
+      <div className={`App ${theme === "dark" ? "dark" : "light"}`}>
+        {isBrowser ? <Navbar /> : null }
+        <div className={`app-no-nav ${theme === "dark" ? "dark" : "light"}`}>
+          <LandingPage />
+          <About />
+          <Contact />
+        </div>
       </div>
-    </div>
+    </ThemeContext.Provider>
   );
 }
 

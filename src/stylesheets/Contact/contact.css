@@ -5,9 +5,41 @@
   flex-wrap: wrap;
   height: 100vh;
 }
-.contact-container .contact {
+.contact-container .light-contact {
   color: white;
   width: 50vh;
+}
+.contact-container .light-contact input:-webkit-autofill,
+.contact-container .light-contact input:-webkit-autofill:hover,
+.contact-container .light-contact input:-webkit-autofill:focus,
+.contact-container .light-contact textarea:-webkit-autofill,
+.contact-container .light-contact textarea:-webkit-autofill:hover,
+.contact-container .light-contact textarea:-webkit-autofill:focus,
+.contact-container .light-contact select:-webkit-autofill,
+.contact-container .light-contact select:-webkit-autofill:hover,
+.contact-container .light-contact select:-webkit-autofill:focus {
+  -webkit-text-fill-color: white;
+  caret-color: white;
+  box-shadow: 0 0 2vh 3vh #181b1b inset, 0 0 2vh #9eb9e0;
+  -webkit-box-shadow: 0 0 2vh 3vh #181b1b inset, 0 0 2vh #9eb9e0;
+}
+.contact-container .dark-contact {
+  color: white;
+  width: 50vh;
+}
+.contact-container .dark-contact input:-webkit-autofill,
+.contact-container .dark-contact input:-webkit-autofill:hover,
+.contact-container .dark-contact input:-webkit-autofill:focus,
+.contact-container .dark-contact textarea:-webkit-autofill,
+.contact-container .dark-contact textarea:-webkit-autofill:hover,
+.contact-container .dark-contact textarea:-webkit-autofill:focus,
+.contact-container .dark-contact select:-webkit-autofill,
+.contact-container .dark-contact select:-webkit-autofill:hover,
+.contact-container .dark-contact select:-webkit-autofill:focus {
+  -webkit-text-fill-color: black;
+  caret-color: black;
+  box-shadow: 0 0 2vh 3vh #d6dad6 inset, 0 0 2vh #9eb9e0;
+  -webkit-box-shadow: 0 0 2vh 3vh #d6dad6 inset, 0 0 2vh #9eb9e0;
 }
 .contact-container .maps {
   margin: 10vh 0vh 0vh 0vh;

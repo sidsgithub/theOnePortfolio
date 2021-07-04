@@ -11,7 +11,13 @@
  .cormorant-garamond{
     font-family: 'Cormorant Garamond', serif;
  }
- .html-background-tags{
-    color: rgba(181, 144, 216, 0.61);
-    opacity: 50%;
+ .html-light-background-tags{
+    color: rgba(233, 236, 215, 0.911);
+    opacity: 30%;
+
+}
+.html-dark-background-tags{
+    color: rgba(51, 53, 41, 0.911);
+    opacity: 30%;
+
 }

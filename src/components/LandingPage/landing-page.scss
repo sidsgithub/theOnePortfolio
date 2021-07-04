@@ -1,55 +1,63 @@
-.landing-div{
-    height: 100vh;
-    display: flex;
-    flex-flow: row;
-    justify-content: space-around;
-    align-content: space-around;
-    flex-wrap: wrap;
 
-    .introduction-script{
+.landing-div {
+  height: 100vh;
+  display: flex;
+  flex-flow: row;
+  justify-content: space-around;
+  align-content: space-around;
+  flex-wrap: wrap;
+
+  .introduction-script {
     margin-left: 2vh;
     color: white;
-    }
-    .margin-top-5{
-        margin-top: .5vh;
-    }
-    .margin-top-3{
-        margin-top: .3vh;
-    }
-    .margin-top-b3{
-        margin-top: 3vh;
-    }
-    .content{
-        font-size: 5vh;
-        margin-left: 1.5vh;   
-    }
-    .margin-left{
-        margin-left: 1.5vh;
-    }
-    .color-red{
-        color: rgba(212, 51, 51, 0.808);
-    }
-    .color-yellow{
-        color: #d2d382;
-    }
-    .outer-frame{
-        height:55vh;
-        width: 35vh;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        background-color: #d2d382;
+  }
+  .margin-top-5 {
+    margin-top: 0.5vh;
+  }
+  .margin-top-3 {
+    margin-top: 0.3vh;
+  }
+  .margin-top-b3 {
+    margin-top: 3vh;
+  }
+  .content {
+    font-size: 5vh;
+    margin-left: 1.5vh;
+  }
+  .margin-left {
+    margin-left: 1.5vh;
+  }
+  .color-red {
+    color: rgba(212, 51, 51, 0.808);
+  }
+  .color-yellow {
+    color: #fbff09;
+  }
+  .color-cyan {
+    color: rgb(65, 138, 138);
+  }
+  .outer-frame {
+    height: 55vh;
+    width: 35vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #dadb75;
+    border-radius: 2%;
+    border: 0.2rem solid #fff;
+    padding: 0.4em;
+    box-shadow: 0 0 0.2rem #fff, 0 0 0.2rem #fff, 0 0 2rem #fefa13,
+      0 0 0.8rem #eefe13, 0 0 2.8rem #eefe13, inset 0 0 1.3rem #eefe13;
+    .inner-frame {
+      height: 50vh;
+      width: 30vh;
+      border-radius: 2%;
+      background-color: #181b1b;
+      .profile-image {
+        height: 55vh;
+        width: 30vh;
         border-radius: 2%;
-        .inner-frame{
-            height: 50vh;
-            width: 30vh;
-            border-radius: 2%;
-            background-color: #181b1b;
-            .profile-image{
-                height: 55vh;
-                width: 30vh;
-                border-radius: 2%;
-            }
-        }
+      }
     }
+  }
 }
