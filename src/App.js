@@ -3,7 +3,7 @@ import "./App.css";
 import Navbar from "./components/Navbar/navbar";
 import LandingPage from "./components/features/Landing-Page/landing-page";
 import About from "./components/features/About/about";
-import Contact from "./components/Contact/contact";
+import Contact from "./components/features/Contact/contact";
 import ThemeContext from "./context/theme-context";
 import { Helmet } from "react-helmet";
 import {

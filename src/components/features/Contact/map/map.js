@@ -1,14 +1,9 @@
-import React from "../../imports/common-imports";
-import "../../stylesheets/Contact/contact.css";
-import "../../imports/fonts.css";
 import { Loader } from "@googlemaps/js-api-loader";
-import ContactForm from "./form/form-component";
-import { useContext } from "react";
-import ThemeContext from "../../context/theme-context";
-
-const Contact = () => {
-  const themeContext = useContext(ThemeContext);
-  const mapId = themeContext.theme==='light'?'19faef2d81d2b0d7':'2bc96d67057bad55';
+export const map = (theme) => {
+  const mapId =
+    theme === "light"
+      ? process.env.REACT_APP_LIGHT_MAP_ID
+      : process.env.REACT_APP_DARK_MAP_ID;
   const loader = new Loader({
     apiKey: process.env.REACT_APP_MAP_APIKEY,
     version: "weekly",
@@ -29,8 +24,6 @@ const Contact = () => {
       scale: 3,
       anchor: new google.maps.Point(15, 30),
     };
-    const image =
-      "https://developers.google.com/maps/documentation/javascript/examples/full/images/beachflag.png";
     const marker = new google.maps.Marker({
       position: myLocation,
       title: "sidd is here",
@@ -39,19 +32,4 @@ const Contact = () => {
     });
     marker.setMap(map);
   });
-
-  return (
-    <div id="contact">
-      <div className={`contact-container`}>
-        <div className={`${themeContext.theme}-contact dancing-script-font`}>
-          <div>
-            <ContactForm />
-          </div>
-        </div>
-        <div id="map" className="maps"></div>
-      </div>
-    </div>
-  );
 };
-
-export default Contact;

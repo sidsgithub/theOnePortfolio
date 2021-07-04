@@ -1,3 +1,5 @@
+@import '../../../common/style/colors.scss';
+
 .form-container {
   display: flex;
   flex-direction: column;
@@ -8,11 +10,11 @@
     margin-left: 1.5vh;
   }
   .form-heading {
-    color: #fbff09;
+    color: $yello-heading-color;
     margin: 0vh 0vh 0vh 1.5vh;
   }
   .form-text {
-    color: rgb(65, 138, 138);;
+    color: $cyan-link-color;
     margin: 0vh 0vh 0vh 1.5vh;
   }
   .form {
@@ -30,7 +32,7 @@
         margin: 2vh 0vh 0vh 0vh;
       }
       .error {
-        color: rgb(235, 92, 92);
+        color: $introduction-red;
         font-size: 2vh;
       }
     }
@@ -38,43 +40,43 @@
       width: 40%;
       height: 5vh;
       border-radius: 4%;
-      background-color: #679e9e;
-      border-top: #181b1b;
-      border-left: #181b1b;
-      color: rgba(255, 255, 255, 0.322);
-      outline: #181b1b;
+      background-color: $cyan-link-color;
+      border-top: $dark-theme;
+      border-left: $dark-theme;
+      color: $btn-disabled;
+      outline: $dark-theme;
       border-bottom: 0.3vh solid;
     }
     .button {
       width: 40%;
       height:5vh;
       border-radius: 4%;
-      background-color: #679e9e;
-      border: white;
-      color: white;
-      outline: #181b1b;
+      background-color: $cyan-link-color;
+      border: $introduction-white;
+      color: $introduction-white;
+      outline: $dark-theme;
       border-bottom: 0.3vh solid;
-      box-shadow: 0 0 2vh #9eb9e0;
+      box-shadow: 0 0 2vh $blue-neon;
     }
   }
 }
 
 .grey {
-  background-color: #181b1b;
-  border-top: #181b1b;
-  border-left: #181b1b;
-  color: white;
-  outline: #181b1b;
+  background-color: $dark-theme;
+  border-top: $dark-theme;
+  border-left: $dark-theme;
+  color: $introduction-white;
+  outline: $dark-theme;
   border-bottom: 0.3vh solid;
-  box-shadow: 0 0 2vh #9eb9e0;
+  box-shadow: 0 0 2vh $blue-neon;
 }
 .strong-blue {
-  background-color: rgb(214, 218, 214);
-  border-top: rgb(208, 216, 204);
-  border-left: rgb(208, 216, 204);
-  border-right: rgb(208, 216, 204);
-  color: black;
-  outline: rgb(208, 216, 204);
-  border-bottom: 0.3vh solid #9eb9e0;
-  box-shadow: 0 0 2vh #9eb9e0;
+  background-color: $light-theme;
+  border-top: $blue-neon;
+  border-left: $blue-neon;
+  border-right: $blue-neon;
+  color: $introduction-black;
+  outline: $blue-neon;
+  border-bottom: 0.3vh solid $blue-neon;
+  box-shadow: 0 0 2vh $blue-neon;
 }

@@ -1,3 +1,6 @@
+@import '../../common/style/fonts.scss';
+@import '../../common/style/colors.scss';
+
 .contact-container {
   display: flex;
   flex-flow: row;
@@ -5,7 +8,7 @@
   flex-wrap: wrap;
   height: 100vh;
   .light-contact {
-    color: white;
+    color: $introduction-white;
     width: 50vh;
     input:-webkit-autofill,
     input:-webkit-autofill:hover,
@@ -16,14 +19,14 @@
     select:-webkit-autofill,
     select:-webkit-autofill:hover,
     select:-webkit-autofill:focus {
-      -webkit-text-fill-color: white;
-      caret-color: white;
-      box-shadow: 0 0 2vh 3vh #181b1b inset,0 0 2vh #9eb9e0;
-      -webkit-box-shadow: 0 0 2vh 3vh #181b1b inset,0 0 2vh #9eb9e0;
+      -webkit-text-fill-color: $introduction-white;
+      caret-color: $introduction-white;
+      box-shadow: 0 0 2vh 3vh $dark-theme inset,0 0 2vh $blue-neon;
+      -webkit-box-shadow: 0 0 2vh 3vh $dark-theme inset,0 0 2vh $blue-neon;
     }
   }
   .dark-contact {
-    color: white;
+    color: $introduction-white;
     width: 50vh;
     input:-webkit-autofill,
     input:-webkit-autofill:hover,
@@ -34,10 +37,10 @@
     select:-webkit-autofill,
     select:-webkit-autofill:hover,
     select:-webkit-autofill:focus {
-      -webkit-text-fill-color: black;
-      caret-color: black;
-      box-shadow: 0 0 2vh 3vh rgb(214, 218, 214) inset,0 0 2vh #9eb9e0;
-      -webkit-box-shadow: 0 0 2vh 3vh rgb(214, 218, 214) inset,0 0 2vh #9eb9e0;
+      -webkit-text-fill-color: $introduction-black;
+      caret-color: $introduction-black;
+      box-shadow: 0 0 2vh 3vh $light-theme inset,0 0 2vh $blue-neon;
+      -webkit-box-shadow: 0 0 2vh 3vh $light-theme inset,0 0 2vh $blue-neon;
     }
 }
   .maps {
