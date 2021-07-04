@@ -6,6 +6,10 @@ import About from "./components/About/about";
 import Contact from "./components/Contact/contact";
 import ThemeContext from "./context/theme-context";
 import { Helmet } from "react-helmet";
+import {
+
+  isBrowser
+} from "react-device-detect";
 
 function App() {
   const [theme, setTheme] = useState("light");
@@ -16,7 +20,7 @@ function App() {
         <body className={`body ${theme === "dark" ? "dark" : "light"} `}></body>
       </Helmet>
       <div className={`App ${theme === "dark" ? "dark" : "light"}`}>
-        <Navbar />
+        {isBrowser ? <Navbar /> : null }
         <div className={`app-no-nav ${theme === "dark" ? "dark" : "light"}`}>
           <LandingPage />
           <About />

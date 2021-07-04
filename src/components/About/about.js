@@ -4,6 +4,7 @@ import "../../imports/fonts.css";
 import "../../context/theme.css";
 import { useContext } from "react";
 import ThemeContext  from "../../context/theme-context";
+import { Link } from "react-scroll";
 
 const About = () => {
   const { theme } =  useContext(ThemeContext);
@@ -33,7 +34,7 @@ const About = () => {
           </p>
           <p>
             Interested in learning about the entire front end spectrum or maybe
-            have some idea we can work together on. <span className="blue">Drop me a line.</span>
+            have some idea we can work together on. <Link className="blue" to='contact'>Drop me a line.</Link>
           </p>
         </div>
           <div className={`caveat-font html-${style}-background-tags`}>{`</p>`}</div>
