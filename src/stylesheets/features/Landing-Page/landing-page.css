@@ -1,3 +1,6 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Caveat&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@1,500&display=swap");
 .landing-div {
   height: 100vh;
   display: flex;
@@ -10,21 +13,10 @@
   margin-left: 2vh;
   color: white;
 }
-.landing-div .margin-top-5 {
-  margin-top: 0.5vh;
-}
-.landing-div .margin-top-3 {
-  margin-top: 0.3vh;
-}
-.landing-div .margin-top-b3 {
-  margin-top: 3vh;
-}
 .landing-div .content {
   font-size: 5vh;
   margin-left: 1.5vh;
-}
-.landing-div .margin-left {
-  margin-left: 1.5vh;
+  font-family: "Dancing Script", cursive;
 }
 .landing-div .color-red {
   color: rgba(212, 51, 51, 0.808);
@@ -43,15 +35,14 @@
   align-items: center;
   background-color: #dadb75;
   border-radius: 2%;
-  border: 0.2rem solid #fff;
+  border: 0.2rem solid white;
   padding: 0.4em;
-  box-shadow: 0 0 0.2rem #fff, 0 0 0.2rem #fff, 0 0 2rem #fefa13, 0 0 0.8rem #eefe13, 0 0 2.8rem #eefe13, inset 0 0 1.3rem #eefe13;
+  box-shadow: 0 0 0.2rem white, 0 0 0.2rem white, 0 0 2rem #dadb75, 0 0 0.8rem #dadb75, 0 0 2.8rem #dadb75, inset 0 0 1.3rem #dadb75;
 }
 .landing-div .outer-frame .inner-frame {
   height: 50vh;
   width: 30vh;
   border-radius: 2%;
-  background-color: #181b1b;
 }
 .landing-div .outer-frame .inner-frame .profile-image {
   height: 55vh;

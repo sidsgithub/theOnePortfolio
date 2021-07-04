@@ -1,3 +1,5 @@
+@import "../../common/style/colors.scss";
+@import "../../common/style/fonts.scss";
 
 .landing-div {
   height: 100vh;
@@ -9,32 +11,21 @@
 
   .introduction-script {
     margin-left: 2vh;
-    color: white;
-  }
-  .margin-top-5 {
-    margin-top: 0.5vh;
-  }
-  .margin-top-3 {
-    margin-top: 0.3vh;
-  }
-  .margin-top-b3 {
-    margin-top: 3vh;
+    color: $introduction-white;
   }
   .content {
     font-size: 5vh;
     margin-left: 1.5vh;
-  }
-  .margin-left {
-    margin-left: 1.5vh;
+    font-family: $dancing-script-font;
   }
   .color-red {
-    color: rgba(212, 51, 51, 0.808);
+    color: $introduction-red;
   }
   .color-yellow {
-    color: #fbff09;
+    color: $yello-heading-color;
   }
   .color-cyan {
-    color: rgb(65, 138, 138);
+    color: $cyan-link-color;
   }
   .outer-frame {
     height: 55vh;
@@ -42,17 +33,18 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #dadb75;
+    background-color: $background-frame-yellow;
     border-radius: 2%;
-    border: 0.2rem solid #fff;
+    border: 0.2rem solid $introduction-white;
     padding: 0.4em;
-    box-shadow: 0 0 0.2rem #fff, 0 0 0.2rem #fff, 0 0 2rem #fefa13,
-      0 0 0.8rem #eefe13, 0 0 2.8rem #eefe13, inset 0 0 1.3rem #eefe13;
+    box-shadow: 0 0 0.2rem $introduction-white, 0 0 0.2rem $introduction-white,
+      0 0 2rem $background-frame-yellow, 0 0 0.8rem $background-frame-yellow,
+      0 0 2.8rem $background-frame-yellow,
+      inset 0 0 1.3rem $background-frame-yellow;
     .inner-frame {
       height: 50vh;
       width: 30vh;
       border-radius: 2%;
-      background-color: #181b1b;
       .profile-image {
         height: 55vh;
         width: 30vh;
