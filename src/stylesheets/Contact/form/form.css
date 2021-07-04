@@ -9,11 +9,11 @@
   margin-left: 1.5vh;
 }
 .form-container .form-heading {
-  color: #d2d382;
+  color: #fbff09;
   margin: 0vh 0vh 0vh 1.5vh;
 }
 .form-container .form-text {
-  color: #9eb9e0;
+  color: #418a8a;
   margin: 0vh 0vh 0vh 1.5vh;
 }
 .form-container .form {
@@ -28,17 +28,56 @@
   margin: 0vh 0vh 2vh 0vh;
 }
 .form-container .form .form-row .input-field-row {
+  border-radius: 5%;
   padding: 1.5vh;
-  color: white;
-  background-color: #323333;
-  border: white;
-  border-radius: 0.7vh;
-  outline: whitesmoke;
   margin: 2vh 0vh 0vh 0vh;
 }
 .form-container .form .form-row .error {
   color: #eb5c5c;
   font-size: 2vh;
+}
+.form-container .form .disabled-btn {
+  width: 40%;
+  height: 5vh;
+  border-radius: 4%;
+  background-color: #679e9e;
+  border-top: #181b1b;
+  border-left: #181b1b;
+  color: rgba(255, 255, 255, 0.322);
+  outline: #181b1b;
+  border-bottom: 0.3vh solid;
+}
+.form-container .form .button {
+  width: 40%;
+  height: 5vh;
+  border-radius: 4%;
+  background-color: #679e9e;
+  border: white;
+  color: white;
+  outline: #181b1b;
+  border-bottom: 0.3vh solid;
+  box-shadow: 0 0 2vh #9eb9e0;
+}
+
+.grey {
+  background-color: #181b1b;
+  border-top: #181b1b;
+  border-left: #181b1b;
+  color: white;
+  outline: #181b1b;
+  border-bottom: 0.3vh solid;
+  box-shadow: 0 0 2vh #9eb9e0;
+}
+
+.strong-blue {
+  background-color: #d6dad6;
+  border-top: #d0d8cc;
+  border-left: #d0d8cc;
+  border-right: #d0d8cc;
+  color: black;
+  outline: #d0d8cc;
+  border-bottom: 0.3vh solid #9eb9e0;
+  box-shadow: 0 0 2vh #9eb9e0;
 }
 
 /*# sourceMappingURL=form.css.map */

@@ -8,8 +8,11 @@ import "../../stylesheets/LandingPage/landing-page.css";
 import "../../imports/fonts.css";
 import "../../assets/images/profile.jpg";
 import profile from "../../assets/images/profile.jpg";
+import { useContext } from "react";
+import ThemeContext from "../../context/theme-context";
 
 const LandingPage = () => {
+  const {theme} = useContext(ThemeContext);
   useEffect(() => {
     var scene = document.getElementById("scene");
     new Parallax(scene);
@@ -17,12 +20,12 @@ const LandingPage = () => {
   return (
     <div id="home" className="landing-div">
         <div className="introduction-script">
-        <div className="caveat-font html-background-tags">{`<html>`}</div>
-          <div className="caveat-font html-background-tags">{`<body>`}</div>
-          <div className="caveat-font html-background-tags margin-top-3">{`<h3>`}</div>
+        <div className={`caveat-font html-${theme}-background-tags`}>{`<html>`}</div>
+          <div className={`caveat-font html-${theme}-background-tags`}>{`<body>`}</div>
+          <div className={`caveat-font html-${theme}-background-tags margin-top-3`}>{`<h3>`}</div>
           <div className="dancing-script-font content">Hi ,</div>
-          <div className="caveat-font html-background-tags">{`</h3>`}</div>
-          <div className="caveat-font html-background-tags margin-top-3">{`<section>`}</div>
+          <div className={`caveat-font html-${theme}-background-tags`}>{`</h3>`}</div>
+          <div className={`caveat-font html-${theme}-background-tags margin-top-3`}>{`<section>`}</div>
           <div className="dancing-script-font content">
             Thanks for stopping by
           </div>
@@ -55,14 +58,14 @@ const LandingPage = () => {
               <Typist.Backspace count={14} delay={1000} />
               <span className="color-red"> Lost Context :p</span>
               <Typist.Backspace count={15} delay={800} />
-              <span className="color-yellow">Let's Scroll Now</span>
+              <span className="color-cyan">Let's Scroll Now</span>
             </Typist>
           </div>
-          <div className="caveat-font html-background-tags">{`</section>`}</div>
-          <div className="caveat-font html-background-tags margin-top-3">{`</body>`}</div>
+          <div className={`caveat-font html-${theme}-background-tags`}>{`</section>`}</div>
+          <div className={`caveat-font html-${theme}-background-tags margin-top-3`}>{`</body>`}</div>
         </div>
         <div className="image-section">
-          <div className="caveat-font html-background-tags">{`<img>`}</div>
+          <div className={`caveat-font html-${theme}-background-tags`}>{`<img>`}</div>
           <div className="outer-frame content" id="scene">
             <div className="inner-frame" data-depth=".2">
               <img
@@ -73,7 +76,7 @@ const LandingPage = () => {
               ></img>
             </div>
           </div>
-          <div className="caveat-font html-background-tags margin-top-b3">{`</img>`}</div>
+          <div className={`caveat-font html-${theme}-background-tags margin-top-b3`}>{`</img>`}</div>
         </div>
       </div>
   );
