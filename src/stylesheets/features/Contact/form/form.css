@@ -1,3 +1,6 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Caveat&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@1,500&display=swap");
 .form-container {
   display: flex;
   flex-direction: column;
@@ -11,10 +14,14 @@
 .form-container .form-heading {
   color: #fbff09;
   margin: 0vh 0vh 0vh 1.5vh;
+  font-size: 5vh;
+  font-family: "Dancing Script", cursive;
 }
 .form-container .form-text {
   color: #418a8a;
   margin: 0vh 0vh 0vh 1.5vh;
+  font-size: 3vh;
+  font-family: "Dancing Script", cursive;
 }
 .form-container .form {
   display: flex;
@@ -31,10 +38,13 @@
   border-radius: 5%;
   padding: 1.5vh;
   margin: 2vh 0vh 0vh 0vh;
+  font-size: 2vh;
+  font-family: "Cormorant Garamond", serif;
 }
 .form-container .form .form-row .error {
   color: rgba(212, 51, 51, 0.808);
   font-size: 2vh;
+  font-family: "Cormorant Garamond", serif;
 }
 .form-container .form .disabled-btn {
   width: 40%;
@@ -46,6 +56,8 @@
   color: rgba(255, 255, 255, 0.322);
   outline: #181b1b;
   border-bottom: 0.3vh solid;
+  font-size: 2vh;
+  font-family: "Cormorant Garamond", serif;
 }
 .form-container .form .button {
   width: 40%;
@@ -57,6 +69,8 @@
   outline: #181b1b;
   border-bottom: 0.3vh solid;
   box-shadow: 0 0 2vh #9eb9e0;
+  font-size: 2vh;
+  font-family: "Cormorant Garamond", serif;
 }
 
 .grey {

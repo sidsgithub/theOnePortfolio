@@ -5,12 +5,14 @@
   color: rgba(51, 53, 41, 0.911);
   opacity: 30%;
   font-family: "Caveat", cursive;
+  font-size: 2vh;
 }
 
 .background-html-tags-light {
   color: rgba(233, 236, 215, 0.911);
   opacity: 30%;
   font-family: "Caveat", cursive;
+  font-size: 2vh;
 }
 
 /*# sourceMappingURL=common-styles.css.map */

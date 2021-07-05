@@ -1,4 +1,5 @@
 @import '../../../common/style/colors.scss';
+@import '../../../common/style/fonts.scss';
 
 .form-container {
   display: flex;
@@ -12,10 +13,14 @@
   .form-heading {
     color: $yello-heading-color;
     margin: 0vh 0vh 0vh 1.5vh;
+    font-size: 5vh;
+    font-family: $dancing-script-font;
   }
   .form-text {
     color: $cyan-link-color;
     margin: 0vh 0vh 0vh 1.5vh;
+    font-size: 3vh;
+    font-family: $dancing-script-font;
   }
   .form {
     display: flex;
@@ -30,10 +35,13 @@
         border-radius: 5%;
         padding: 1.5vh;
         margin: 2vh 0vh 0vh 0vh;
+        font-size: 2vh;
+        font-family: $cormorant-garamond-font;
       }
       .error {
         color: $introduction-red;
         font-size: 2vh;
+        font-family: $cormorant-garamond-font;
       }
     }
     .disabled-btn {
@@ -46,6 +54,8 @@
       color: $btn-disabled;
       outline: $dark-theme;
       border-bottom: 0.3vh solid;
+      font-size: 2vh;
+      font-family: $cormorant-garamond-font;
     }
     .button {
       width: 40%;
@@ -57,6 +67,8 @@
       outline: $dark-theme;
       border-bottom: 0.3vh solid;
       box-shadow: 0 0 2vh $blue-neon;
+      font-size: 2vh;
+      font-family: $cormorant-garamond-font;
     }
   }
 }
