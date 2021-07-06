@@ -7,9 +7,9 @@ import Contact from "./components/features/Contact/contact";
 import ThemeContext from "./context/theme-context";
 import { Helmet } from "react-helmet";
 import {
-
   isBrowser
 } from "react-device-detect";
+import TimeLine from './components/features/Time-Line/time-line';
 
 function App() {
   const [theme, setTheme] = useState("light");
@@ -24,6 +24,7 @@ function App() {
         <div className={`app-no-nav ${theme === "dark" ? "dark" : "light"}`}>
           <LandingPage />
           <About />
+          <TimeLine/>
           <Contact />
         </div>
       </div>
