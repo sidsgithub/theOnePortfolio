@@ -1,0 +1,40 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Caveat&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@1,500&display=swap");
+.post-component-wrapper {
+  display: flex;
+  flex-flow: row;
+  flex-wrap: wrap;
+  margin: 20vh;
+  justify-content: center;
+}
+.post-component-wrapper .post-heading {
+  color: #fbff09;
+  margin: 0vh 0vh 0vh 0.5vh;
+  font-size: 5vh;
+  font-family: "Dancing Script", cursive;
+}
+.post-component-wrapper .posts-container {
+  display: flex;
+  flex-flow: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+}
+.post-component-wrapper .posts-container .posts {
+  border-radius: 0.5vh;
+  margin: 5vh 2vh 0vh 0vh;
+  width: 40vh;
+  height: 25vh;
+  box-shadow: 0 0 1.2vh white;
+}
+.post-component-wrapper .posts-container :hover {
+  cursor: pointer;
+  box-shadow: 0 0 4vh 5vh #181b1b inset, 0 0 5vh white;
+  mask-image: url("../../../assets/images/attachment.svg");
+  mask-size: 50%;
+  mask-position: center;
+  mask-repeat: no-repeat;
+}
+
+/*# sourceMappingURL=instagram.css.map */

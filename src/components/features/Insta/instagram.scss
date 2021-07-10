@@ -1,0 +1,39 @@
+@import "../../common/style/colors.scss";
+@import '../../common/style/fonts.scss';
+
+.post-component-wrapper{
+  display: flex;
+    flex-flow: row;
+    flex-wrap: wrap;
+    margin: 20vh;
+    justify-content: center;
+    .post-heading{
+      color: $yello-heading-color;
+      margin: 0vh 0vh 0vh .5vh;
+      font-size: 5vh;
+      font-family: $dancing-script-font;
+    }
+
+  .posts-container {
+    display: flex;
+    flex-flow: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    .posts {
+      border-radius: 0.5vh;
+      margin: 5vh 2vh 0vh 0vh;
+      width: 40vh;
+      height: 25vh;
+      box-shadow: 0 0 1.2vh $introduction-white;
+  }
+  :hover {
+    cursor: pointer;
+    box-shadow: 0 0 4vh 5vh $dark-theme inset, 0 0 5vh $introduction-white;
+    mask-image: url('../../../assets/images/attachment.svg');
+    mask-size: 50%;
+    mask-position: center;
+    mask-repeat: no-repeat;
+  }
+  }
+}

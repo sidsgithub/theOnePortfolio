@@ -1,0 +1,15 @@
+@import '../style/colors.scss';
+@import './fonts.scss';
+
+.background-html-tags-dark{
+    color: $background-html-tags-color-dark;
+    opacity:30%;
+    font-family: $caveat-font;
+    font-size: 2vh;
+}
+.background-html-tags-light{
+    color: $background-html-tags-color-light;
+    opacity: 30%;
+    font-family: $caveat-font;
+    font-size: 2vh;
+}

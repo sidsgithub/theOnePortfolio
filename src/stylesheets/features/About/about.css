@@ -1,0 +1,52 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Caveat&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@1,500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Caveat&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@1,500&display=swap");
+.background-html-tags-dark {
+  color: rgba(51, 53, 41, 0.911);
+  opacity: 30%;
+  font-family: "Caveat", cursive;
+  font-size: 2vh;
+}
+
+.background-html-tags-light {
+  color: rgba(233, 236, 215, 0.911);
+  opacity: 30%;
+  font-family: "Caveat", cursive;
+  font-size: 2vh;
+}
+
+.about-container {
+  display: flex;
+  flex-flow: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.about-container .about {
+  display: flex;
+  flex-flow: column;
+  align-items: flex-start;
+  justify-content: center;
+  width: 50vh;
+  height: -webkit-fill-available;
+}
+.about-container .about .about-heading {
+  font-size: 5vh;
+  margin-left: 1.5vh;
+  color: #fbff09;
+  font-family: "Dancing Script", cursive;
+}
+.about-container .about .about-content {
+  font-size: 2.5vh;
+  margin-left: 1.5vh;
+  font-family: "Cormorant Garamond", serif;
+}
+.about-container .about .about-content .about-link {
+  cursor: pointer;
+  color: #418a8a;
+  font-family: "Cormorant Garamond", serif;
+}
+
+/*# sourceMappingURL=about.css.map */

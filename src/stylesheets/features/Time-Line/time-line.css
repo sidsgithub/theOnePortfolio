@@ -1,0 +1,62 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Caveat&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@1,500&display=swap");
+.timeline-container {
+  margin: 15vh 5vh 15vh 5vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.timeline-container .heading-container {
+  display: flex;
+  flex-flow: column;
+  align-items: flex-start;
+}
+.timeline-container .heading-container .timeline-heading {
+  font-size: 5vh;
+  margin-left: 1.5vh;
+  color: #fbff09;
+  font-family: "Dancing Script", cursive;
+}
+.timeline-container .timelin-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.timeline-container .timelin-wrapper .timeline {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+.timeline-container .timelin-wrapper .timeline .dot {
+  margin-top: 7vh;
+  height: 1vh;
+  width: 1vh;
+  border-radius: 50%;
+  background-color: #fbff09;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  box-shadow: 0 0 2vh #9eb9e0, 0 0 4vh white, 0 0 4vh #fbff09;
+}
+.timeline-container .timelin-wrapper .timeline hr {
+  margin-top: 10vh;
+  height: 70vh;
+  border: 0.1vh solid;
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin-left: 0.34vh;
+  opacity: 10%;
+}
+.timeline-container .timelin-wrapper .timeline .timeline-points {
+  display: flex;
+  flex-flow: row;
+}
+.timeline-container .timelin-wrapper .timeline .timeline-points .element-wrap-container {
+  display: flex;
+  flex-flow: column;
+}
+
+/*# sourceMappingURL=time-line.css.map */
