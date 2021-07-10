@@ -4,6 +4,8 @@ import Navbar from "./components/Navbar/navbar";
 import LandingPage from "./components/features/Landing-Page/landing-page";
 import About from "./components/features/About/about";
 import Contact from "./components/features/Contact/contact";
+import Instagram from './components/features/Insta/instagram';
+import Technology from "./components/features/Technology/technology";
 import ThemeContext from "./context/theme-context";
 import { Helmet } from "react-helmet";
 import {
@@ -25,6 +27,8 @@ function App() {
           <LandingPage />
           <About />
           <TimeLine/>
+          <Technology/>
+          <Instagram />
           <Contact />
         </div>
       </div>

@@ -1,0 +1,55 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Caveat&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@1,500&display=swap");
+.technology-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.technology-wrapper .technology-heading-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.technology-wrapper .technology-heading-container .technology-heading {
+  font-size: 5vh;
+  margin-left: 1.5vh;
+  color: #fbff09;
+  font-family: "Dancing Script", cursive;
+}
+.technology-wrapper .technology {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.technology-wrapper .technology .tech-container .card {
+  width: 30vh;
+  height: 10vh;
+  margin: 3vh;
+  border-radius: 2vh;
+  display: flex;
+  flex-flow: row;
+  justify-content: flex-start;
+  align-items: center;
+  box-shadow: 0 0 0.2vh white, 0 0 0.2vh white, inset 0 0 1.3rem white;
+  cursor: pointer;
+}
+.technology-wrapper .technology .tech-container .card :hover {
+  box-shadow: none;
+}
+.technology-wrapper .technology .tech-container .card .tech-img {
+  margin-left: 2vh;
+  width: 5vh;
+  height: 5vh;
+}
+.technology-wrapper .technology .tech-container .card .tech-title {
+  margin-left: 4vh;
+  font-size: 2.5vh;
+  font-family: "Caveat", cursive;
+}
+.technology-wrapper .technology .tech-container :hover {
+  box-shadow: 0 0 0.2vh #fbff09, 0 0 0.2vh #fbff09, inset 0 0 1.3rem #fbff09;
+}
+
+/*# sourceMappingURL=technology.css.map */

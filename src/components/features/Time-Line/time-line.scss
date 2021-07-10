@@ -2,53 +2,60 @@
 @import "../../common/style/fonts.scss";
 
 .timeline-container {
-  height: 80vh;
+  margin: 15vh 5vh 15vh 5vh;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  .heading-container{
-      display: flex;
-      flex-flow: column;
-      align-items: flex-start;
-
-      .timeline-heading{
-        font-size: 5vh;
-        margin-left: 1.5vh;
-        color: $yello-heading-color;
-        font-family: $dancing-script-font;
-      }
-  }
-  .timeline {
+  .heading-container {
     display: flex;
-    flex-direction: column;
-    position: relative;
-    .dot {
-      margin-top: 7vh;
-      height: 1vh;
-      width: 1vh;
-      border-radius: 50%;
-      background-color: $yello-heading-color;
-      top:0;
-      left:0;
-      z-index: 1;
-      box-shadow: 0 0 2vh $blue-neon, 0 0 4vh $introduction-white, 0 0 4vh $yello-heading-color;
+    flex-flow: column;
+    align-items: flex-start;
+
+    .timeline-heading {
+      font-size: 5vh;
+      margin-left: 1.5vh;
+      color: $yello-heading-color;
+      font-family: $dancing-script-font;
     }
-    hr {
-      margin-top: 7vh;
-      height: 34vh;
-      border: 0.1vh solid;
-      position: absolute;
-      top: 0;
-      left:0;
-      margin-left: .34vh;
-    }
-    .timeline-points {
+  }
+  .timelin-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    .timeline {
       display: flex;
-      flex-flow: row;
-      .element-wrap-container{
+      flex-direction: column;
+      position: relative;
+      .dot {
+        margin-top: 7vh;
+        height: 1vh;
+        width: 1vh;
+        border-radius: 50%;
+        background-color: $yello-heading-color;
+        top: 0;
+        left: 0;
+        z-index: 1;
+        box-shadow: 0 0 2vh $blue-neon, 0 0 4vh $introduction-white,
+          0 0 4vh $yello-heading-color;
+      }
+      hr {
+        margin-top: 10vh;
+        height: 70vh;
+        border: 0.1vh solid;
+        position: absolute;
+        top: 0;
+        left: 0;
+        margin-left: 0.34vh;
+        opacity: 10%;
+      }
+      .timeline-points {
+        display: flex;
+        flex-flow: row;
+        .element-wrap-container {
           display: flex;
           flex-flow: column;
+        }
       }
     }
   }

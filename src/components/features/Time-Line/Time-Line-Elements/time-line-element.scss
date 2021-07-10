@@ -7,12 +7,12 @@
     flex-direction: row;
     margin: 2vh;
     .time-line-element-image{
-        // margin: 0vh 2vh 2vh 2vh;
-        height: 5vh;
-        width: 15vh;
+        height: 8vh;
+        width: 8vh;
+        margin: 1vh;
     }
     .time-line-element-content{
-        // margin: 0vh 2vh 2vh 2vh;
+       
         width: max-content;
         font-family: $cormorant-garamond-font;
         font-size: 2.5vh;

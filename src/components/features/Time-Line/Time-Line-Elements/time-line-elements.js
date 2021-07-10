@@ -1,13 +1,14 @@
 import React from 'react';
-import './time-line-element.scss';
+import '../../../../stylesheets/features/Time-Line/Time-Line-Elements/time-line-element.css';
 
-const TimeLineElement = ({imgSrc, jobTitle, date}) => {
+const TimeLineElement = ({img,schoolName, eduTitle, date}) => {
     return (
         <div className ='time-line-container'>
-        <img src={imgSrc} className='time-line-element-image' alt=''/>
+        <img src={img} className='time-line-element-image' alt=''/>
         <div className="time-line-element-content">
         <div className='element-content-title'>
-        <div className=''>{jobTitle}</div>
+        <div className=''>{schoolName}</div>
+        <div className=''>{eduTitle}</div>
         <div className=''>{date}</div>
         </div>
         </div>
