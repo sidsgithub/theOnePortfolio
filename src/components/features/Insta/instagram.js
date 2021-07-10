@@ -35,7 +35,7 @@ const Instagram = () => {
     }
 
   return (
-    <div className='post-component-wrapper'>
+    <div className='post-component-wrapper' id='posts'>
       <div className>
         <BackgroundTag theme={theme} value={`<h1>`} />
         <h1 className="post-heading">Shutterbug Work</h1>
