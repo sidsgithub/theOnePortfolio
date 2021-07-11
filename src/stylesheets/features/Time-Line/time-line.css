@@ -1,62 +1,58 @@
 @import url("https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Caveat&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@1,500&display=swap");
-.timeline-container {
-  margin: 15vh 5vh 15vh 5vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-}
-.timeline-container .heading-container {
-  display: flex;
-  flex-flow: column;
-  align-items: flex-start;
-}
-.timeline-container .heading-container .timeline-heading {
-  font-size: 5vh;
-  margin-left: 1.5vh;
-  color: #fbff09;
-  font-family: "Dancing Script", cursive;
-}
-.timeline-container .timelin-wrapper {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
-.timeline-container .timelin-wrapper .timeline {
-  display: flex;
-  flex-direction: column;
+.timeline ul li {
+  list-style-type: none;
   position: relative;
+  width: 0.2vh;
+  margin: 0 auto;
+  padding-top: 4vh;
+  background: white;
 }
-.timeline-container .timelin-wrapper .timeline .dot {
-  margin-top: 7vh;
-  height: 1vh;
-  width: 1vh;
-  border-radius: 50%;
-  background-color: #fbff09;
-  top: 0;
-  left: 0;
-  z-index: 1;
-  box-shadow: 0 0 2vh #9eb9e0, 0 0 4vh white, 0 0 4vh #fbff09;
+.timeline ul li div {
+  position: relative;
+  bottom: 0;
+  width: 40vh;
+  padding: 1.5vh;
+  background: #418a8a;
 }
-.timeline-container .timelin-wrapper .timeline hr {
-  margin-top: 10vh;
-  height: 70vh;
-  border: 0.1vh solid;
+.timeline ul li div::before {
+  content: "";
   position: absolute;
-  top: 0;
-  left: 0;
-  margin-left: 0.34vh;
-  opacity: 10%;
+  bottom: 1vh;
+  width: 0;
+  height: 0;
+  border-style: solid;
 }
-.timeline-container .timelin-wrapper .timeline .timeline-points {
-  display: flex;
-  flex-flow: row;
+.timeline ul li::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  width: 2vh;
+  height: 2vh;
+  border-radius: 50%;
+  z-index: 1;
+  background: #fbff09;
 }
-.timeline-container .timelin-wrapper .timeline .timeline-points .element-wrap-container {
-  display: flex;
-  flex-flow: column;
+.timeline ul li:nth-child(odd) div {
+  left: 8vh;
+  text-align: start;
+}
+.timeline ul li:nth-child(odd) div::before {
+  left: -1.5vh;
+  border-width: 1vh 2vh 1vh 0;
+  border-color: transparent #418a8a transparent transparent;
+}
+.timeline ul li:nth-child(even) div {
+  transform: translate(-120%);
+  text-align: end;
+}
+.timeline ul li:nth-child(even) div::before {
+  right: -1.5vh;
+  border-width: 1vh 0 1vh 2vh;
+  border-color: transparent transparent transparent #418a8a;
 }
 
 /*# sourceMappingURL=time-line.css.map */
