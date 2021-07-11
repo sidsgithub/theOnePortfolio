@@ -2,20 +2,32 @@
 @import "../../common/style/fonts.scss";
 
 .timeline {
+  margin: 4vh;
   ul {
     li {
-      list-style-type: none; 
-      position: relative; 
-      width: 0.2vh; 
+      list-style-type: none;
+      position: relative;
+      width: 0.2vh;
       margin: 0 auto;
       padding-top: 4vh;
       background: $introduction-white;
       div {
         position: relative;
         bottom: 0;
-        width: 40vh;
+        @media only screen and (min-width: 480px) {
+          width: 10vh;
+        }
+        @media only screen and (min-width: 768px) {
+          width: 20vh;
+        }
+        @media only screen and (min-width: 992px) {
+          width: 40vh;
+        }
         padding: 1.5vh;
         background: $cyan-link-color;
+        visibility: hidden;
+        opacity: 0;
+        transition: all 0.5s ease-in-out;
       }
       div::before {
         content: "";
@@ -25,31 +37,37 @@
         height: 0;
         border-style: solid;
       }
+      .in-view::after {
+        background: $cyan-link-color;
+      }
     }
     li::after {
-      content: ""; 
+      content: "";
       position: absolute;
-      left: 50%; 
+      left: 50%;
       bottom: 0;
-      transform: translateX(-50%); 
-      width: 2vh; 
-      height: 2vh; 
+      transform: translateX(-50%);
+      width: 2vh;
+      height: 2vh;
       border-radius: 50%;
-      z-index: 1; 
-      background: $yello-heading-color; 
+      z-index: 1;
+      background: $yello-heading-color;
+      transition: background 0.5s ease-in-out;
     }
-    li:nth-child(odd) div{
+    li:nth-child(odd) div {
       left: 8vh;
       text-align: start;
+      transform: translate3d(40vh, 0, 0);
     }
     li:nth-child(odd) div::before {
       left: -1.5vh;
       border-width: 1vh 2vh 1vh 0;
       border-color: transparent $cyan-link-color transparent transparent;
     }
-    li:nth-child(even) div{
+    li:nth-child(even) div {
       transform: translate(-120%);
       text-align: end;
+      transform: translate3d(-80vh, 0, 0);
     }
     li:nth-child(even) div::before {
       right: -1.5vh;
@@ -57,4 +75,15 @@
       border-color: transparent transparent transparent $cyan-link-color;
     }
   }
+}
+
+.timeline ul li:nth-child(odd).in-view div {
+  transform: none;
+  visibility: visible;
+  opacity: 1;
+}
+.timeline ul li:nth-child(even).in-view div {
+  transform: translate(-120%);
+  visibility: visible;
+  opacity: 1;
 }

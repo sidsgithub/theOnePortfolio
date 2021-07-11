@@ -8,6 +8,7 @@
   justify-content: space-around;
   align-content: space-around;
   flex-wrap: wrap;
+  margin: 10vh;
 }
 .landing-div .introduction-script {
   margin-left: 2vh;
@@ -27,7 +28,22 @@
 .landing-div .color-cyan {
   color: #418a8a;
 }
-.landing-div .outer-frame {
+@media only screen and (min-width: 480px) {
+  .landing-div .image-section {
+    margin-top: 5vh;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .landing-div .image-section {
+    margin-top: 5vh;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .landing-div .image-section {
+    margin: 0;
+  }
+}
+.landing-div .image-section .outer-frame {
   height: 55vh;
   width: 35vh;
   display: flex;
@@ -35,16 +51,16 @@
   align-items: center;
   background-color: #dadb75;
   border-radius: 2%;
-  border: 0.2rem solid white;
-  padding: 0.4em;
+  border: 0.2vh solid white;
+  padding: 0.4vh;
   box-shadow: 0 0 0.2rem white, 0 0 0.2rem white, 0 0 2rem #dadb75, 0 0 0.8rem #dadb75, 0 0 2.8rem #dadb75, inset 0 0 1.3rem #dadb75;
 }
-.landing-div .outer-frame .inner-frame {
+.landing-div .image-section .outer-frame .inner-frame {
   height: 50vh;
   width: 30vh;
   border-radius: 2%;
 }
-.landing-div .outer-frame .inner-frame .profile-image {
+.landing-div .image-section .outer-frame .inner-frame .profile-image {
   height: 55vh;
   width: 30vh;
   border-radius: 2%;
