@@ -1,0 +1,29 @@
+@import "../../common/style/colors.scss";
+@import "../../common/style/fonts.scss";
+
+.time-line-container {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  margin: 10vh;
+  .time-line-heading {
+    font-size: 5vh;
+    margin-left: 1.5vh;
+    color: $yello-heading-color;
+    font-family: $dancing-script-font;
+  }
+  .sectional-heading {
+    margin-top: 4vh;
+    font-size: 3vh;
+    font-family: $cormorant-garamond-font;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .time-line-container {
+    display: flex;
+    flex-flow: column;
+    align-items: flex-start;
+    margin: 10vh;
+  }
+}

@@ -1,42 +1,24 @@
 @import url("https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Caveat&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@1,500&display=swap");
-.timeline {
-  margin: 4vh;
-}
 .timeline ul li {
   list-style-type: none;
   position: relative;
-  width: 0.2vh;
-  margin: 0 auto;
-  padding-top: 4vh;
+  width: 1px;
+  padding-top: 2vw;
   background: white;
 }
-.timeline ul li div {
+.timeline ul li .timeline-element {
   position: relative;
   bottom: 0;
-  padding: 1.5vh;
-  background: #418a8a;
+  padding: 1.5vw;
   visibility: hidden;
   opacity: 0;
+  width: 30vw;
+  padding: 2vw;
   transition: all 0.5s ease-in-out;
 }
-@media only screen and (min-width: 480px) {
-  .timeline ul li div {
-    width: 10vh;
-  }
-}
-@media only screen and (min-width: 768px) {
-  .timeline ul li div {
-    width: 20vh;
-  }
-}
-@media only screen and (min-width: 992px) {
-  .timeline ul li div {
-    width: 40vh;
-  }
-}
-.timeline ul li div::before {
+.timeline ul li .timeline-element::before {
   content: "";
   position: absolute;
   bottom: 1vh;
@@ -44,53 +26,119 @@
   height: 0;
   border-style: solid;
 }
-.timeline ul li .in-view::after {
-  background: #418a8a;
-}
 .timeline ul li::after {
   content: "";
   position: absolute;
   left: 50%;
   bottom: 0;
   transform: translateX(-50%);
-  width: 2vh;
-  height: 2vh;
+  width: 15px;
+  height: 15px;
   border-radius: 50%;
   z-index: 1;
   background: #fbff09;
   transition: background 0.5s ease-in-out;
 }
-.timeline ul li:nth-child(odd) div {
+.timeline ul li:nth-child(odd) .timeline-element {
   left: 8vh;
   text-align: start;
   transform: translate3d(40vh, 0, 0);
 }
-.timeline ul li:nth-child(odd) div::before {
-  left: -1.5vh;
+.timeline ul li:nth-child(odd) .timeline-element.light-element::before {
+  left: -2vh;
   border-width: 1vh 2vh 1vh 0;
-  border-color: transparent #418a8a transparent transparent;
+  border-color: transparent #181b1b transparent transparent;
 }
-.timeline ul li:nth-child(even) div {
+.timeline ul li:nth-child(odd) .timeline-element.dark-element::before {
+  left: -2vh;
+  border-width: 1vh 2vh 1vh 0;
+  border-color: transparent #d6dad6 transparent transparent;
+}
+.timeline ul li:nth-child(even) .timeline-element {
   transform: translate(-120%);
   text-align: end;
   transform: translate3d(-80vh, 0, 0);
 }
-.timeline ul li:nth-child(even) div::before {
-  right: -1.5vh;
+.timeline ul li:nth-child(even) .timeline-element.light-element::before {
+  right: -2vh;
   border-width: 1vh 0 1vh 2vh;
-  border-color: transparent transparent transparent #418a8a;
+  border-color: transparent transparent transparent #181b1b;
+}
+.timeline ul li:nth-child(even) .timeline-element.dark-element::before {
+  right: -2vh;
+  border-width: 1vh 0 1vh 2vh;
+  border-color: transparent transparent transparent #d6dad6;
 }
 
-.timeline ul li:nth-child(odd).in-view div {
+.timeline ul li:nth-child(odd).in-view .timeline-element {
   transform: none;
   visibility: visible;
   opacity: 1;
 }
 
-.timeline ul li:nth-child(even).in-view div {
+.timeline ul li:nth-child(even).in-view .timeline-element {
   transform: translate(-120%);
   visibility: visible;
   opacity: 1;
+}
+
+.timeline-element {
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  justify-items: center;
+  box-shadow: 0 0 4vh #9eb9e0;
+}
+
+.timeline-image {
+  width: 8vh;
+  height: 5vh;
+}
+
+.timeline-content {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  font-size: 1.8vh;
+  flex-wrap: nowrap;
+}
+
+@media screen and (max-width: 600px) {
+  .timeline-content {
+    display: flex;
+    flex-flow: column;
+    justify-content: flex-start;
+    font-size: 1.8vh;
+    flex-wrap: nowrap;
+  }
+
+  .timeline ul {
+    margin-left: 0px;
+    padding-left: 0px;
+  }
+
+  .timeline ul li .timeline-element {
+    width: 45vw;
+    padding: 5vw;
+  }
+
+  .timeline ul li:nth-child(even) .timeline-element {
+    left: 8vh;
+    text-align: start;
+  }
+
+  .timeline ul li:nth-child(even) .timeline-element::before {
+    left: -1.9vh;
+    border-width: 1vh 2vh 1vh 0vh;
+    transform: rotate(180deg);
+    border-color: transparent transparent transparent #181b1b;
+  }
+
+  .timeline ul li:nth-child(even).in-view .timeline-element {
+    transform: none;
+  }
 }
 
 /*# sourceMappingURL=time-line.css.map */
