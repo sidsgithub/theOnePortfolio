@@ -1,5 +1,6 @@
 import React, { useContext } from "react";
 import TimeLine from "./time-line";
+import WorkTimeLine from "./work-time-line";
 import BackgroundTag from "../../common/components/bacground-tags";
 import ThemeContext from "../../../context/theme-context";
 import "./time-line-container.scss";
@@ -15,6 +16,8 @@ const TimeLineConatiner = () => {
       </div>
       <div className="sectional-heading">1.) Institutions</div>
       <TimeLine />
+      <div className="sectional-heading">2.) Experiences</div>
+      <WorkTimeLine />
     </div>
   );
 };

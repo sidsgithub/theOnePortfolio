@@ -7,26 +7,15 @@
       list-style-type: none;
       position: relative;
       width: 1px;
-      // margin: 0 auto;
-      padding-top: 2vw;
       background: $introduction-white;
       .timeline-element {
         position: relative;
         bottom: 0;
-        padding: 1.5vw;
         visibility: hidden;
         opacity: 0;
-        width: 30vw;
-        padding: 2vw;
+        width: max-content;
+        padding: 2vw 2vw 0 2vw;
         transition: all 0.5s ease-in-out;
-      }
-      .timeline-element::before {
-        content: "";
-        position: absolute;
-        bottom: 1vh;
-        width: 0;
-        height: 0;
-        border-style: solid;
       }
     }
     li::after {
@@ -42,39 +31,10 @@
       background: $yello-heading-color;
       transition: background 0.5s ease-in-out;
     }
-    li:nth-child(odd) .timeline-element {
-      left: 8vh;
-      text-align: start;
-      transform: translate3d(40vh, 0, 0);
-    }
-    //
-    li:nth-child(odd) .timeline-element.light-element::before {
-      left: -2vh;
-      border-width: 1vh 2vh 1vh 0;
-      border-color: transparent $dark-theme transparent transparent;
-    }
-    //
-    li:nth-child(odd) .timeline-element.dark-element::before {
-      left: -2vh;
-      border-width: 1vh 2vh 1vh 0;
-      border-color: transparent $light-theme transparent transparent;
-    }
+  
     li:nth-child(even) .timeline-element {
-      transform: translate(-120%);
       text-align: end;
-      transform: translate3d(-80vh, 0, 0);
-    }
-    //
-    li:nth-child(even) .timeline-element.light-element::before {
-      right: -2vh;
-      border-width: 1vh 0 1vh 2vh;
-      border-color: transparent transparent transparent $dark-theme;
-    }
-    //
-    li:nth-child(even) .timeline-element.dark-element::before {
-      right: -2vh;
-      border-width: 1vh 0 1vh 2vh;
-      border-color: transparent transparent transparent $light-theme;
+      transform: translate3d(-70vh, 0, 0);
     }
   }
 }
@@ -85,18 +45,13 @@
   opacity: 1;
 }
 .timeline ul li:nth-child(even).in-view .timeline-element {
-  transform: translate(-120%);
+  transform: translate(-112%);
   visibility: visible;
   opacity: 1;
 }
 .timeline-element {
   flex-wrap: wrap;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  align-content: center;
-  justify-items: center;
-  box-shadow: 0 0 4vh $blue-neon;
 }
 .timeline-image {
   width: 8vh;
@@ -124,20 +79,11 @@
   }
 
   .timeline ul li .timeline-element {
-    width: 45vw;
-    padding: 5vw;
+    padding: 5vw 5vw 0vw 5vw;
   }
 
   .timeline ul li:nth-child(even) .timeline-element {
-    left: 8vh;
     text-align: start;
-  }
-
-  .timeline ul li:nth-child(even) .timeline-element::before {
-    left: -1.9vh;
-    border-width: 1vh 2vh 1vh 0vh;
-    transform: rotate(180deg);
-    border-color: transparent transparent transparent $dark-theme;
   }
   .timeline ul li:nth-child(even).in-view .timeline-element {
     transform: none;
