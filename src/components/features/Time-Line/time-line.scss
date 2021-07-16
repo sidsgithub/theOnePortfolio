@@ -14,8 +14,9 @@
         visibility: hidden;
         opacity: 0;
         width: max-content;
-        padding: 2vw 2vw 0 2vw;
+        padding: 4vw 2vw 0 2vw;
         transition: all 0.5s ease-in-out;
+        font-family: $roboto-font;
       }
     }
     li::after {
@@ -28,10 +29,10 @@
       height: 15px;
       border-radius: 50%;
       z-index: 1;
-      background: $yello-heading-color;
+      background: $blue-neon;
       transition: background 0.5s ease-in-out;
     }
-  
+
     li:nth-child(even) .timeline-element {
       text-align: end;
       transform: translate3d(-70vh, 0, 0);
@@ -40,12 +41,12 @@
 }
 
 .timeline ul li:nth-child(odd).in-view .timeline-element {
-  transform: none;
+  transform: translate(-5%);
   visibility: visible;
   opacity: 1;
 }
 .timeline ul li:nth-child(even).in-view .timeline-element {
-  transform: translate(-112%);
+  transform: translate(-105%);
   visibility: visible;
   opacity: 1;
 }
@@ -54,15 +55,42 @@
   display: flex;
 }
 .timeline-image {
-  width: 8vh;
-  height: 5vh;
+  width: 10vw;
+  height: 10vh;
+  padding-right: 10px;
 }
 .timeline-content {
   display: flex;
   flex-flow: column;
   justify-content: center;
-  font-size: 1.8vh;
   flex-wrap: nowrap;
+  time {
+    font-size: 10px;
+  }
+  .timeline-heading {
+    font-size: 2vh;
+    padding-bottom: 2px;
+    font-weight: 400;
+    color: $grey-heading;
+    text-decoration: underline;
+  }
+  .timeline-sub-heading {
+    font-size: 1.8vh;
+    padding-top: 4px;
+    padding-bottom: 2px;
+    font-weight: 400;
+  }
+  .timeline-location-container {
+    font-weight: 50;
+    font-size: 12px;
+    padding-bottom: 4px;
+
+    .timeline-location {
+      width: 10px;
+      height: 10px;
+      padding-right: 2px;
+    }
+  }
 }
 
 @media screen and (max-width: 600px) {
@@ -70,8 +98,16 @@
     display: flex;
     flex-flow: column;
     justify-content: flex-start;
-    font-size: 1.8vh;
     flex-wrap: nowrap;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+    padding-right: 0;
+    .timeline-heading {
+      font-size: 3.2vw;
+    }
+    .timeline-sub-heading {
+      font-size: 2.5vw;
+    }
   }
   .timeline ul {
     margin-left: 0px;
@@ -79,13 +115,13 @@
   }
 
   .timeline ul li .timeline-element {
-    padding: 5vw 5vw 0vw 5vw;
-  }
-
-  .timeline ul li:nth-child(even) .timeline-element {
-    text-align: start;
+    padding: 5vw 0vw 0vw 5vw;
   }
   .timeline ul li:nth-child(even).in-view .timeline-element {
+    text-align: start;
+    transform: none;
+  }
+  .timeline ul li:nth-child(odd).in-view .timeline-element {
     transform: none;
   }
 }

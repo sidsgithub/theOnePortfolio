@@ -1,5 +1,5 @@
 export const line1 =
-    "I am sure by now you a have pretty descent idea of some of my likes and interests. Allow me to add some more.";
+    "I am sure by now you a have pretty decent idea of some of my likes and interests. Allow me to add some more.";
 export const line2 =
     "I am a code fanatic based in India who does think of himself as an artist and a pseudo-perfectionist. This pseudo-perfectionist is involved in a lot of artsy stuff. Travelling is fuel for me.";
 export const line3 =

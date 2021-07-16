@@ -13,9 +13,12 @@
     font-family: $dancing-script-font;
   }
   .sectional-heading {
-    margin-top: 4vh;
+    padding:5vh;
     font-size: 3vh;
-    font-family: $cormorant-garamond-font;
+    font-weight: 900;
+    color: $grey-heading;
+    letter-spacing: .5px;
+    font-family: $roboto-font;
   }
 }
 

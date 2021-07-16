@@ -2,10 +2,10 @@ import capgemini from '../../../../assets/images/capgeminilogo.svg';
 import birlasoft from '../../../../assets/images/birlasoft.svg';
 import bhel from '../../../../assets/images/bhel.svg';
 import csir from '../../../../assets/images/csir.svg';
-
+import wal from '../../../../assets/images/wal.svg'
 export const work = [
   {
-    icon: '',
+    icon: wal,
     company: "West Agile Labs",
     jobTitle: "Software Development Engineer",
     location: 'Hyderabad',

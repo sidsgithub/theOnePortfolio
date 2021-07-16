@@ -14,9 +14,12 @@
   font-family: "Dancing Script", cursive;
 }
 .time-line-container .sectional-heading {
-  margin-top: 4vh;
+  padding: 5vh;
   font-size: 3vh;
-  font-family: "Cormorant Garamond", serif;
+  font-weight: 900;
+  color: rgba(192, 192, 192, 0.795);
+  letter-spacing: 0.5px;
+  font-family: "Roboto", sans-serif;
 }
 
 @media screen and (max-width: 600px) {

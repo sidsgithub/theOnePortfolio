@@ -1,0 +1,102 @@
+// .timeline {
+//     white-space: nowrap;
+//     overflow-x: hidden;
+//   }
+   
+//   .timeline ol {
+//     font-size: 0;
+//     width: 100vw;
+//     padding: 250px 0;
+//     transition: all 1s;
+//   }
+   
+//   .timeline ol li {
+//     position: relative;
+//     display: inline-block;
+//     list-style-type: none;
+//     width: 160px;
+//     height: 3px;
+//     background: #fff;
+//   }
+   
+//   .timeline ol li:last-child {
+//     width: 280px;
+//   }
+   
+//   .timeline ol li:not(:first-child) {
+//     margin-left: 14px;
+//   }
+   
+//   .timeline ol li:not(:last-child)::after {
+//     content: '';
+//     position: absolute;
+//     top: 50%;
+//     left: calc(100% + 1px);
+//     bottom: 0;
+//     width: 12px;
+//     height: 12px;
+//     transform: translateY(-50%);
+//     border-radius: 50%;
+//     background: #F45B69;
+//   }
+
+//   .timeline {
+//     white-space: nowrap;
+//     overflow-x: hidden;
+//   }
+   
+//   .timeline ol {
+//     font-size: 0;
+//     width: 100vw;
+//     padding: 250px 0;
+//     transition: all 1s;
+//   }
+   
+//   .timeline ol li {
+//     position: relative;
+//     display: inline-block;
+//     list-style-type: none;
+//     width: 160px;
+//     height: 3px;
+//     background: #fff;
+//   }
+   
+//   .timeline ol li:last-child {
+//     width: 280px;
+//   }
+   
+//   .timeline ol li:not(:first-child) {
+//     margin-left: 14px;
+//   }
+   
+//   .timeline ol li:not(:last-child)::after {
+//     content: '';
+//     position: absolute;
+//     top: 50%;
+//     left: calc(100% + 1px);
+//     bottom: 0;
+//     width: 12px;
+//     height: 12px;
+//     transform: translateY(-50%);
+//     border-radius: 50%;
+//     background: #F45B69;
+//   }
+//   .timeline ol li:nth-child(odd) div {
+//     top: -16px;
+//     transform: translateY(-100%);
+//   }
+   
+//   .timeline ol li:nth-child(odd) div::before {
+//     top: 100%;
+//     border-width: 8px 8px 0 0;
+//     border-color: white transparent transparent transparent;
+//   }
+//   .timeline ol li:nth-child(even) div {
+//     top: calc(100% + 16px);
+//   }
+   
+//   .timeline ol li:nth-child(even) div::before {
+//     top: -8px;
+//     border-width: 8px 0 0 8px;
+//     border-color: transparent transparent transparent white;
+//   }

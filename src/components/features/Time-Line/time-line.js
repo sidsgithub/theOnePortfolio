@@ -4,12 +4,11 @@ import "./time-line.scss";
 import { education } from "./Time-Line-Elements/eduction";
 import ThemeContext from "../../../context/theme-context";
 
-
 const TimeLine = () => {
   const [containerRef, isVisible] = useElementOnScreen();
   const [items, setItems] = useState([]);
 
-  const {theme} = useContext(ThemeContext);
+  const { theme } = useContext(ThemeContext);
 
   // adding calsses to the lists in view;
   function addClassToLi() {
@@ -31,16 +30,22 @@ const TimeLine = () => {
       <ul>
         {education.map((edu, key) => (
           <li ref={containerRef} key={key}>
-            <div className={`timeline-element ${theme}-element`} >
+            <div className={`timeline-element`}>
               <div className="timeline-image-container">
-                <img className="timeline-image" src={edu.img} alt={`edu-${key}`} />
+                <img
+                  className="timeline-image"
+                  src={edu.img}
+                  alt={`edu-${key}`}
+                />
               </div>
               <div className="timeline-content">
-              <div>{edu.schoolName}</div>
-              <div></div>
-              <div>{edu.eduTitle}</div>
-              <div></div>
-              <time>{edu.date}</time>
+                <div className="timeline-heading">{edu.schoolName}</div>
+
+                <div className="timeline-sub-heading">
+                  {edu.eduTitle}
+                </div>
+
+                <time>{edu.date}</time>
               </div>
             </div>
           </li>
