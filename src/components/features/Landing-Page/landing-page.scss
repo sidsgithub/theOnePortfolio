@@ -8,6 +8,7 @@
   justify-content: space-around;
   align-content: space-around;
   flex-wrap: wrap;
+  margin: 10vh;
 
   .introduction-script {
     margin-left: 2vh;
@@ -27,28 +28,39 @@
   .color-cyan {
     color: $cyan-link-color;
   }
-  .outer-frame {
-    height: 55vh;
-    width: 35vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: $background-frame-yellow;
-    border-radius: 2%;
-    border: 0.2rem solid $introduction-white;
-    padding: 0.4em;
-    box-shadow: 0 0 0.2rem $introduction-white, 0 0 0.2rem $introduction-white,
-      0 0 2rem $background-frame-yellow, 0 0 0.8rem $background-frame-yellow,
-      0 0 2.8rem $background-frame-yellow,
-      inset 0 0 1.3rem $background-frame-yellow;
-    .inner-frame {
-      height: 50vh;
-      width: 30vh;
+  .image-section {
+    @media only screen and (min-width: 480px) {
+      margin-top: 5vh;
+    }
+    @media only screen and (min-width: 768px) {
+      margin-top: 5vh;
+    }
+    @media only screen and (min-width: 992px) {
+      margin: 0;
+    }
+    .outer-frame {
+      height: 55vh;
+      width: 35vh;
+      display: flex;
+      justify-content: center; 
+      align-items: center;
+      background-color: $background-frame-yellow;
       border-radius: 2%;
-      .profile-image {
-        height: 55vh;
+      border: 0.2vh solid $introduction-white;
+      padding: 0.4vh;
+      box-shadow: 0 0 0.2rem $introduction-white, 0 0 0.2rem $introduction-white,
+        0 0 2rem $background-frame-yellow, 0 0 0.8rem $background-frame-yellow,
+        0 0 2.8rem $background-frame-yellow,
+        inset 0 0 1.3rem $background-frame-yellow;
+      .inner-frame {
+        height: 50vh;
         width: 30vh;
         border-radius: 2%;
+        .profile-image {
+          height: 55vh;
+          width: 30vh;
+          border-radius: 2%;
+        }
       }
     }
   }

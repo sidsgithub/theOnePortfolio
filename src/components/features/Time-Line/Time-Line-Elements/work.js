@@ -1,31 +1,67 @@
-import capegimini from '../../../../assets/images/capgeminilogo.svg';
+import capgemini from '../../../../assets/images/capgeminilogo.svg';
+import birlasoft from '../../../../assets/images/birlasoft.svg';
 import bhel from '../../../../assets/images/bhel.svg';
-import lucidius from '../../../../assets/images/lucideus.svg';
-import srm from '../../../../assets/images/srm.svg';
+import csir from '../../../../assets/images/csir.svg';
+import wal from '../../../../assets/images/wal.svg'
 export const work = [
   {
-    imgSrc: lucidius,
-    jobTitle: "Security Analyst Certfication",
-    date: "1/03/2015 - 1/05/2015",
+    icon: wal,
+    company: "West Agile Labs",
+    jobTitle: "Software Development Engineer",
+    location: 'Hyderabad',
+    projects: [
+      {
+        projectTitle: "CypressLawn",
+        description:
+          "Build on Electron using React and Node Backend. Made for the Employees of onePortal to book ",
+        role: "Full stack",
+        link: "",
+      },
+      {
+        projectTitle: "Web Cemeteries",
+        description: "Built on React with ROR BE ",
+        role: "Front-End",
+        link: "",
+      },
+      {
+        projectTitle: "",
+        description: "",
+        role: "",
+        link: "",
+      },
+    ],
+    date: "2020 - currently working",
   },
   {
-    imgSrc: srm,
-    jobTitle: "BTech. - Information Technology ",
-    date: "1/05/2015 - 1/6/2019",
-  },
-  {
-    imgSrc: bhel,
+    icon: capgemini,
+    company: "Capgemini",
+    location:'Chennai',
     jobTitle: "Web Development - Trainee",
-    date: "3/06/2017 - 3/08/2017",
+    projects: [{ projectTitle: "", description: "", role: "" }],
+    date: "2020 - 2019",
   },
   {
-    imgSrc: bhel,
-    jobTitle: "Web Development - Trainee",
-    date: "3/06/2017 - 3/08/2017",
+    icon: csir,
+    company: "CSIR-CSIO",
+    location: 'Chandigarh',
+    jobTitle: "Research Intern",
+    projects: [{ projectTitle: "", description: "", role: "" }],
+    date: "2018 - 2019",
   },
   {
-    imgSrc: capegimini,
-    jobTitle: "Software Development Engineer - Trainee",
-    date: "1/03/2019 - 1/6/2019",
-  }
+    icon: bhel,
+    company: "BHEL",
+    location: 'Varanasi',
+    jobTitle: "Web Development - Intern",
+    projects: [{ projectTitle: "", description: "", role: "" }],
+    date: "2017 - 2018",
+  },
+  {
+    icon: birlasoft,
+    company: "Birlasoft",
+    location: 'Noida',
+    jobTitle: "Web Development - Intern",
+    projects: [{ projectTitle: "", description: "", role: "" }],
+    date: "2017 - 2016",
+  },
 ];

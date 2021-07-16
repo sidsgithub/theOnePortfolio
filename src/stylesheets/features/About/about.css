@@ -23,6 +23,7 @@
   flex-flow: row;
   flex-wrap: wrap;
   justify-content: space-evenly;
+  margin: 10vh;
 }
 .about-container .about {
   display: flex;

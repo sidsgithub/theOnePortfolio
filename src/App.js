@@ -11,7 +11,7 @@ import { Helmet } from "react-helmet";
 import {
   isBrowser
 } from "react-device-detect";
-import TimeLine from './components/features/Time-Line/time-line';
+import TimeLineConatiner from './components/features/Time-Line/time-line-container';
 
 function App() {
   const [theme, setTheme] = useState("light");
@@ -26,7 +26,7 @@ function App() {
         <div className={`app-no-nav ${theme === "dark" ? "dark" : "light"}`}>
           <LandingPage />
           <About />
-          <TimeLine/>
+          <TimeLineConatiner/>
           <Technology/>
           <Instagram />
           <Contact />

@@ -1,11 +1,36 @@
-import {CgMenu} from 'react-icons/cg';
-import {FaRegGrin} from 'react-icons/fa'
-import {BsFillPersonFill} from 'react-icons/bs';
-import {FiBook,FiUser} from 'react-icons/fi'
-import {IoPaperPlaneOutline,IoLocationOutline,IoMoon} from'react-icons/io5';
-import {IoMdSunny} from 'react-icons/io'
-import {GiGuitarHead} from 'react-icons/gi'
-import {RiMessage3Line,RiAwardLine,RiMusicLine} from 'react-icons/ri'
+import { CgMenu,CgWorkAlt } from "react-icons/cg";
+import { FaRegGrin,FaGraduationCap } from "react-icons/fa";
+import { BsFillPersonFill, BsCamera } from "react-icons/bs";
+import { FiBook, FiUser } from "react-icons/fi";
+import {
+  IoPaperPlaneOutline,
+  IoLocationOutline,
+  IoMoon,
+} from "react-icons/io5";
+import { IoMdSunny } from "react-icons/io";
+import { GiGuitarHead, GiSkills } from "react-icons/gi";
+import { RiMessage3Line, RiAwardLine, RiMusicLine } from "react-icons/ri";
+import { FcTodoList } from "react-icons/fc";
+import { MdTimeline } from "react-icons/md";
 
-
-export {CgMenu,FaRegGrin,BsFillPersonFill, FiUser,FiBook, IoPaperPlaneOutline,IoLocationOutline, GiGuitarHead, RiMessage3Line,RiAwardLine,RiMusicLine,IoMdSunny,IoMoon};
+export {
+  CgMenu,
+  FaRegGrin,
+  BsFillPersonFill,
+  FiUser,
+  FiBook,
+  IoPaperPlaneOutline,
+  IoLocationOutline,
+  GiSkills,
+  GiGuitarHead,
+  RiMessage3Line,
+  RiAwardLine,
+  RiMusicLine,
+  IoMdSunny,
+  BsCamera,
+  IoMoon,
+  FcTodoList,
+  CgWorkAlt,
+  FaGraduationCap,
+  MdTimeline
+};

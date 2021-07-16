@@ -23,18 +23,15 @@
 }
 .post-component-wrapper .posts-container .posts {
   border-radius: 0.5vh;
-  margin: 5vh 2vh 0vh 0vh;
-  width: 40vh;
+  margin: 20px;
+  width: 300px;
   height: 25vh;
   box-shadow: 0 0 1.2vh white;
 }
 .post-component-wrapper .posts-container :hover {
   cursor: pointer;
-  box-shadow: 0 0 4vh 5vh #181b1b inset, 0 0 5vh white;
-  mask-image: url("../../../assets/images/attachment.svg");
-  mask-size: 50%;
-  mask-position: center;
-  mask-repeat: no-repeat;
+  box-shadow: 0 0 4vh 5vh #181b1b inset, 0 0 2vw white;
+  transform: scale(1.1);
 }
 
 /*# sourceMappingURL=instagram.css.map */

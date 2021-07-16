@@ -11,7 +11,12 @@ const Navbar = () => {
   const { theme } = useContext(ThemeContext);
   return (
     <div className="nav-component">
-      <div className={`theme-switch theme-switch ${theme === "dark" ? "dark" : "light"}`}>
+      <div
+      title={`toggle ${theme} mode`}
+        className={`theme-switch theme-switch ${
+          theme === "dark" ? "dark" : "light"
+        }`}
+      >
         <ThemeSwitcher />
       </div>
       <div className={`nav-bar ${theme === "dark" ? "dark" : "light"}`}>
@@ -21,6 +26,7 @@ const Navbar = () => {
         <div className="nav-items">
           {navItems.map((items) => (
             <Link
+              title={items.name}
               activeClass="active"
               spy={true}
               smooth={true}

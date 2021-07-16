@@ -28,22 +28,22 @@ const Instagram = () => {
     };
     fetchPosts();
   }, []);
-
-  useEffect(() => console.log(posts), [posts]);
+  
   function handleClick(link) {
     window.open(link,'_blank');
     }
 
   return (
-    <div className='post-component-wrapper'>
-      <div className>
+    <div className='post-component-wrapper' id='posts'>
+      <div>
         <BackgroundTag theme={theme} value={`<h1>`} />
         <h1 className="post-heading">Shutterbug Work</h1>
         <BackgroundTag theme={theme} value={`<h1>`} />
       </div>
       <div className="posts-container">
-        {posts.map((element) => (
+        {posts.map((element,key) => (
           <img
+            key={key}
             onClick={()=>handleClick(element.link)}
             className="posts"
             src={`${urlString}${element.post}?alt=media&token=${accessToken}`}

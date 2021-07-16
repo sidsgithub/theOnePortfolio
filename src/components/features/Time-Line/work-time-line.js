@@ -1,10 +1,11 @@
 import React, { useEffect, useState, useContext } from "react";
 import useElementOnScreen from "../../common/components/isInViewPort";
 import "./time-line.scss";
-import { education } from "./Time-Line-Elements/eduction";
+import { work } from "./Time-Line-Elements/work";
 import ThemeContext from "../../../context/theme-context";
+import pinlocation from "../../../assets/images/location.svg";
 
-const TimeLine = () => {
+const WorkTimeLine = () => {
   const [containerRef, isVisible] = useElementOnScreen();
   const [items, setItems] = useState([]);
 
@@ -28,24 +29,28 @@ const TimeLine = () => {
   return (
     <section className="timeline">
       <ul>
-        {education.map((edu, key) => (
+        {work.map((work, key) => (
           <li ref={containerRef} key={key}>
-            <div className={`timeline-element`}>
+            <div className={`timeline-element ${theme}-element`}>
               <div className="timeline-image-container">
                 <img
                   className="timeline-image"
-                  src={edu.img}
-                  alt={`edu-${key}`}
+                  src={work.icon}
+                  alt={`${key}`}
                 />
               </div>
               <div className="timeline-content">
-                <div className="timeline-heading">{edu.schoolName}</div>
-
-                <div className="timeline-sub-heading">
-                  {edu.eduTitle}
+                <div className="timeline-heading">{work.company}</div>
+                <div className="timeline-location-container">
+                  <img
+                    src={pinlocation}
+                    alt="location"
+                    className="timeline-location"
+                  />
+                  {work.location}
                 </div>
-
-                <time>{edu.date}</time>
+                <div className="timeline-sub-heading">{work.jobTitle}</div>
+                <time>{`( ${work.date} )`}</time>
               </div>
             </div>
           </li>
@@ -54,4 +59,4 @@ const TimeLine = () => {
     </section>
   );
 };
-export default TimeLine;
+export default WorkTimeLine;
