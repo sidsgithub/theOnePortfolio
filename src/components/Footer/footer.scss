@@ -1,0 +1,45 @@
+@import "../common//style/fonts.scss";
+@import "../common//style/colors.scss";
+
+.footer-container {
+    color:rgb(110, 109, 109);
+  padding: 40px;
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+  .footer-licence-wrapper {
+    display: flex;
+    flex-flow: row;
+    .licence-logo {
+      height: 25px;
+      padding-right: 2px;
+    }
+    .licence {
+      font-size: 10px;
+    }
+  }
+  .footer-desc {
+    font-size: 12px;
+    font-family: $roboto-font;
+    font-weight: 100;
+    padding: 20px;
+  }
+  .icons{
+      display: flex;
+      flex-flow: row;
+  }
+}
+
+.clickable{
+    padding-right: 10px;
+    :hover{
+        transform: scale(1.1);
+        color: $cyan-link-color;
+        cursor: pointer;
+    }
+}
+@media screen and (max-width: 600px) {
+    .footer-container {
+      flex-flow: column;
+    }
+}
