@@ -23,7 +23,6 @@ yarn-debug.log*
 yarn-error.log*
  
 .firebase
-/public
 .env
 .github
 /src/assets

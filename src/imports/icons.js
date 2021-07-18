@@ -1,5 +1,5 @@
 import { CgMenu,CgWorkAlt } from "react-icons/cg";
-import { FaRegGrin,FaGraduationCap } from "react-icons/fa";
+import { FaRegGrin,FaGraduationCap,FaFolderOpen } from "react-icons/fa";
 import { BsFillPersonFill, BsCamera } from "react-icons/bs";
 import { FiBook, FiUser } from "react-icons/fi";
 import {
@@ -8,7 +8,7 @@ import {
   IoMoon,
 } from "react-icons/io5";
 import { IoMdSunny } from "react-icons/io";
-import { GiGuitarHead, GiSkills } from "react-icons/gi";
+import { GiGuitarHead, GiSkills,GiGraduateCap } from "react-icons/gi";
 import { RiMessage3Line, RiAwardLine, RiMusicLine } from "react-icons/ri";
 import { FcTodoList } from "react-icons/fc";
 import { MdTimeline } from "react-icons/md";
@@ -32,5 +32,6 @@ export {
   FcTodoList,
   CgWorkAlt,
   FaGraduationCap,
-  MdTimeline
+  MdTimeline,GiGraduateCap,
+  FaFolderOpen
 };

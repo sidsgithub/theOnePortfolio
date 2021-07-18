@@ -16,7 +16,7 @@ const TimeLineConatiner = () => {
       </div>
       <div className="sectional-heading">1.) Institutions</div>
       <TimeLine />
-      <div className="sectional-heading">2.) Experiences</div>
+      <div className="sectional-heading" id="experiences">2.) Experiences</div>
       <WorkTimeLine />
     </div>
   );

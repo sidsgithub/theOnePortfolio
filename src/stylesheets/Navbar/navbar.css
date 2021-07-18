@@ -45,7 +45,7 @@
   top: 0;
 }
 .nav-component .nav-bar .active {
-  color: #2894a7;
+  color: #418a8a;
 }
 .nav-component .nav-bar .nav-menu {
   display: block;
@@ -69,8 +69,7 @@
   text-decoration: none;
 }
 .nav-component .nav-bar .nav-items :hover {
-  opacity: 50%;
-  color: #2894a7;
+  color: #418a8a;
 }
 
 .nav-bar:hover > .nav-menu {

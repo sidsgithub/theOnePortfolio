@@ -1,0 +1,69 @@
+@import "../../common/style/colors.scss";
+@import "../../common/style/fonts.scss";
+
+.projects-container {
+  display: flex;
+  align-items: center;
+  flex-flow: column;
+  .projects-heading {
+    font-size: 5vh;
+    margin-left: 1.5vh;
+    color: $yello-heading-color;
+    font-family: $dancing-script-font;
+  }
+  .projects-wrapper {
+    display: flex;
+    flex-flow: row;
+    align-content: space-between;
+    flex-wrap: wrap;
+    justify-content: center;
+    .projects-card {
+      padding: 5px;
+      max-width: 60vw;
+      max-height: 40vh;
+      box-shadow: inset 0 0 0.5rem $introduction-white;
+      border-radius: 5%;
+      margin: 10px;
+
+      .projects-image-container {
+        .projects-image {
+          max-width: 59vw;
+          max-height: 30vh;
+          border-radius: 5% 5% 0 0;
+          padding-bottom: 5px;
+        }
+      }
+      .projects-heading-wrapper {
+        padding: 5px;
+        .projects-title {
+          display: flex;
+          flex-flow: row;
+          flex-wrap: nowrap;
+          justify-content: space-between;
+          font-size: 20px;
+          color: $cyan-link-color;
+          font-family: $roboto-font;
+          padding-bottom: 4px;
+          .proejects-link {
+            color: $introduction-white;
+          }
+          :hover {
+            cursor: pointer;
+          }
+        }
+        .projects-description {
+          font-size: 2vh;
+          color: $grey-heading;
+          font-family: $roboto-font;
+          padding-bottom: 4px;
+        }
+
+        .projects-hashtags {
+          font-size: 1.5vh;
+          font-family: $roboto-font;
+        }
+      }
+
+    }
+  }
+}

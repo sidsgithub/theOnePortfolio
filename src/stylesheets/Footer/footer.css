@@ -1,0 +1,48 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Caveat&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@1,500&display=swap");
+.footer-container {
+  color: #6e6d6d;
+  padding: 40px;
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+}
+.footer-container .footer-licence-wrapper {
+  display: flex;
+  flex-flow: row;
+}
+.footer-container .footer-licence-wrapper .licence-logo {
+  height: 25px;
+  padding-right: 2px;
+}
+.footer-container .footer-licence-wrapper .licence {
+  font-size: 10px;
+}
+.footer-container .footer-desc {
+  font-size: 12px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
+  padding: 20px;
+}
+.footer-container .icons {
+  display: flex;
+  flex-flow: row;
+}
+
+.clickable {
+  padding-right: 10px;
+}
+.clickable :hover {
+  transform: scale(1.1);
+  color: #418a8a;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 600px) {
+  .footer-container {
+    flex-flow: column;
+  }
+}
+
+/*# sourceMappingURL=footer.css.map */
