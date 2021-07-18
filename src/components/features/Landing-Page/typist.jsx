@@ -2,7 +2,6 @@ import {Typist,React} from '../../../imports/common-imports';
 
 const TypistText = () => 
     <Typist
-    cursor={{ show: false }}
     startDelay={500}
     avgTypingDelay={100}
   >

@@ -13,7 +13,7 @@ const TextField = ({
     <textarea
       style={{ resize: "none" }}
       rows="4"
-      maxlength="255"
+      maxLength="255"
       type="text"
       name={inputFor}
       id={inputFor}

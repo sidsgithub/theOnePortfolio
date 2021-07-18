@@ -1,54 +1,54 @@
 import React, { useContext, useEffect, useState } from "react";
-import { firebaseConfig } from "../../../config";
-import firebase from "firebase";
 import "./instagram.scss";
 import BackgroundTag from "../../common/components/bacground-tags";
 import ThemeContext from "../../../context/theme-context";
+import useElementOnScreen from "../../common/components/isInViewPort";
+import {db} from '../../common/components/firestore.db';
+import { urlString, accessToken } from "../../common/components/constants";
 
 const Instagram = () => {
+  const options = {
+    root: null,
+    rootMargin: "0px",
+    threshold: 1.0,
+  };
+  const [containerRef, isVisible] = useElementOnScreen(options);
   const { theme } = useContext(ThemeContext);
-  const urlString =
-    "https://firebasestorage.googleapis.com/v0/b/sidportfolio-e73a6.appspot.com/o/";
-  const accessToken = "1db92b3c-f3c3-4017-9468-f377e3e933f4";
-  // initialising firebase
-  const [posts, setPosts] = useState([]);
-  // const [images, setImages] = useState([]);
 
-  let firebaseApp;
-  if (!firebase.apps.length) {
-    firebaseApp = firebase.initializeApp(firebaseConfig);
-  } else {
-    firebaseApp = firebase.app(); // if already initialized
-  }
-  const db = firebaseApp.firestore();
+  const [posts, setPosts] = useState([]);
+
   useEffect(() => {
     const fetchPosts = async () => {
       const fetchedPosts = await db.collection("instaPosts").get();
       setPosts(fetchedPosts.docs.map((doc) => doc.data()));
     };
-    fetchPosts();
-  }, []);
-  
-  function handleClick(link) {
-    window.open(link,'_blank');
+    if(isVisible){
+
+      fetchPosts();
     }
+  }, [isVisible]);
+
+  function handleClick(link) {
+    window.open(link, "_blank");
+  }
 
   return (
-    <div className='post-component-wrapper' id='posts'>
-      <div>
+    <div className="post-component-wrapper" id="posts">
+      <div ref={containerRef}>
         <BackgroundTag theme={theme} value={`<h1>`} />
         <h1 className="post-heading">Photography</h1>
         <BackgroundTag theme={theme} value={`<h1>`} />
       </div>
       <div className="posts-container">
-        {posts.map((element,key) => (
-          <img
-            key={key}
-            onClick={()=>handleClick(element.link)}
-            className="posts"
-            src={`${urlString}${element.post}?alt=media&token=${accessToken}`}
-            alt="some"
-          />
+        {posts.map((element, key) => (
+            <img
+              key={key}
+              onClick={() => handleClick(element.link)}
+              className="posts"
+              src={`${urlString}${element.post}?alt=media&token=${accessToken}`}
+              alt="some"
+              loading='lazy'
+            />
         ))}
       </div>
     </div>
